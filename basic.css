@@ -16,9 +16,10 @@ body {
 /* 页脚 ↓ */
 footer {
     text-align: center;
+    line-height: 1.5em;
     color: rgb(199, 199, 199);
     font-size: 17px;
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
     padding-top: 2vw;
 }
 /* 页脚 ↑ */
