@@ -8,18 +8,20 @@
     font-family: 'STSong';
 }
 
-
 body {
-    background-color: white;
+    line-height: 2.5em;
+    background-color: gray;
 }
 
+/* 页脚 ↓ */
 footer {
     text-align: center;
+    color: rgb(199, 199, 199);
     font-size: 17px;
     padding-bottom: 2vw;
     padding-top: 2vw;
-    color: gray;
 }
+/* 页脚 ↑ */
 
 /*↓↓↓萌娘百科版文字黑幕↓↓↓*/
 span.heimu a.external,span.heimu a.external:visited,span.heimu a.extiw,span.heimu a.extiw:visited {
@@ -62,13 +64,14 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 }
 /*到顶部↑*/
 
-.topbutton {
+.leftbutton {
     border-style: none;
     cursor:pointer;
     font-weight: bold;
     margin: 0;
-    width: 10vw;
-    height: 100px;
+    width: 22vw;
+    height: 10vh;
+    min-height: 30px;
     background-color: white;
     color: black;
     font-size: large;
@@ -77,37 +80,82 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     transition: 1s;
 }
 
-.topbutton:hover {
-    /*background-color: rgb(213, 243, 255);*/
-    background-color: rgb(199, 239, 255);
+.leftbutton:hover {
+    background-color: rgb(233, 233, 233);
     filter: opacity(1);
     opacity: 1;
 }
 
-.header {
+.leftheader {
     position: fixed;
-    /* background-color: white; */
     top: 0;
     left: 0px;
-    width: 100vw;
-    height: 100px;
+    width: 22vw;
+    height: 100vh;
     z-index: 10;
 }
 
-.header .blanket {
+.leftheader .leftblanket {
     background-color: white;
     text-align: center;
     overflow: hidden;
-    width: 100vw;
-    height: 100px;
-    opacity: 0.9;
+    width: 22vw;
+    height: 100vh;
 }
 
-.headershadow {
+.leftheadershadow {
     position: fixed;
-    top:100px;
-    width: 100vw;
-    height: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.05) , rgba(255, 255, 255, 0));
+    left:22vw;
+    width: 20px;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.1) , rgba(255, 255, 255, 0));
+    z-index: 10;
+}
+
+.rightbutton {
+    border-style: none;
+    cursor:pointer;
+    font-weight: bold;
+    margin: 0;
+    width: 18vw;
+    height: 5vh;
+    min-height: 30px;
+    background-color: white;
+    color: black;
+    font-size: large;
+    filter: opacity(0.7);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.rightbutton:hover {
+    background-color: rgb(233, 233, 233);
+    filter: opacity(1);
+    opacity: 1;
+}
+
+.rightheader {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 18vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.rightheader .rightblanket {
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    width: 18vw;
+    height: 100vh;
+}
+
+.rightheadershadow {
+    position: fixed;
+    right:18vw;
+    width: 20px;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
     z-index: 10;
 }
