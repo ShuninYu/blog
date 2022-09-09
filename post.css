@@ -35,6 +35,7 @@ p2{
 .tag {
     background-color: rgb(233, 233, 233);
     font-size: x-large;
+    font-weight: bold;
     padding: 0.2em;
     margin-left: 0.5em;
     margin-right: 0.5em;
