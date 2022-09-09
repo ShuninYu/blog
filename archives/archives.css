@@ -1,0 +1,16 @@
+@charset "uft-8";
+/* css document */
+
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+}

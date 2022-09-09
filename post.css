@@ -66,36 +66,3 @@ ul {
     height: 2px;
     background-color:rgb(177, 177, 177);
 }
-
-.line {
-    height: 3px;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    background-color: rgb(233, 233, 233);
-}
-
-.article {
-    width: 78vw;
-    padding-left: 25vw;
-}
-
-.preface {
-    background-color: rgb(110, 110, 110);
-    width: 99%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    float: left;
-}
-
-.boxleftline {
-    background-color: rgb(177, 177, 177);
-    width: 1%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    float: left;
-}

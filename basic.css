@@ -160,3 +160,36 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
     z-index: 10;
 }
+
+.article {
+    width: 78vw;
+    padding-left: 25vw;
+}
+
+.boxleftline {
+    background-color: rgb(177, 177, 177);
+    width: 1%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+.preface {
+    background-color: rgb(110, 110, 110);
+    width: 99%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+.line {
+    height: 3px;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    background-color: rgb(233, 233, 233);
+}
