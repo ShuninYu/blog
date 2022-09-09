@@ -11,6 +11,7 @@ h1 {
 
 h2 {
     font-size: xx-large;
+    margin-top: 1em;
     padding-bottom: 1em;
 }
 
@@ -30,6 +31,18 @@ p1 {
 
 p2{
     font-size: x-large;
+}
+
+.imgtext {
+    font-size: 19px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.image {
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 70vh;
 }
 
 .tag {
@@ -60,4 +73,23 @@ ul {
 
 .headimg {
     -webkit-filter: grayscale(50%);
+}
+
+.script {
+    background-color: rgb(39, 40, 34);
+    border-radius: 6px;
+}
+
+.wordbutton{
+    cursor:pointer;
+    border-style: none;
+    border-radius: 6px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(99, 99, 99)/*rgb(0, 1, 58)*/;
+}
+
+.wordbutton:hover {
+    background-color:  rgb(80, 80, 80)/*rgb(0, 31, 97)*/;
 }
