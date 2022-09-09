@@ -1,2 +1,24 @@
 @charset "uft-8";
 /* css document */
+
+body {
+    color: white;
+}
+
+p {
+    font-size: large;
+}
+
+.asidebox {
+    background-color: rgb(110, 110, 110);
+    overflow: hidden;
+    position: absolute;
+    top: 18vh;
+    left: 40vw;
+    width: 38vw;
+    max-height: 400px;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: large;
+}
