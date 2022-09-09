@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>孤灯的Blog</title><!--补充网页title-->
-        <link rel="icon" href="icon/Beeduckven.jpg">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" type="text/css" href="basic.css">
-        <script src="basic.js" type="text/javascrip"></script>
-        <script src="index.js" type="text/javascrip"></script>
+        <title>关于 | 孤灯的Blog</title><!--补充网页title-->
+        <link rel="icon" href="../icon/Beeduckven.jpg">
+        <link rel="stylesheet" type="text/css" href="archives.css">
+        <link rel="stylesheet" type="text/css" href="../basic.css">
+        <script src="../basic.js" type="text/javascrip"></script>
+        <script src="archives.js" type="text/javascrip"></script>
     </head>
 
     <body>
@@ -18,10 +18,10 @@
                     <p2 style="font-size: 2vw; color:gray; text-align:center; font-weight: bold; line-height: 1.2em;">ShuninYu 's Blog</p2>
                 </div>
                 <div style="height: 5vh;"></div>
-                <button class="leftbutton">主页
-                <button class="leftbutton" onclick="location.href='/archives'">归档
-                <button class="leftbutton" onclick="location.href='/about'">关于
-                <button class="leftbutton" onclick="location.href='/friends'">友链
+                <button class="leftbutton" onclick="location.href='/'">主页
+                <button class="leftbutton">归档
+                <button class="leftbutton" onclick="location.href='../about'">关于
+                <button class="leftbutton" onclick="location.href='../friends'">友链
                 <button class="leftbutton" onclick="location.href='https://www.shuninyu.fun'">主站</button>
             </div>
         </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="rightheadershadow"></div>
         <div id = "gotop">
-            <img src="image/Button_Duck_GoToTop_2.png" alt="gotop">
+            <img src="../image/Button_Duck_GoToTop_2.png" alt="gotop">
         </div>
         <script>
             window.addEventListener("scroll",handle)
@@ -53,17 +53,16 @@
             }
         </script>
         <!--页面基础结构完成，从这之后开始增加页面内容-->
-        <div style="width: 78vw; padding-left: 25vw; text-align: center;">
-            <div style="height: 20vh;"></div>
-            <img src="icon/Beeduckven.jpg" style="border: solid 8px rgb(66, 66, 66);">
-            <p style="font-size: 1.3em; font-weight: bold;">《Beeduckven》</br>"Not me for sure. 👀"</p>
-            <div style="height: 10vh;"></div>
-            <!--更新文章后修改button里链接的文章名-->
-            <h2 style="text-align: center;">欢迎光临孤灯的博客，要不要先看看<button onclick="location.href='/p/文章模板';" style="cursor:pointer; border-style: none; border-radius: 6px 6px 6px 6px; font-size: 25px; font-weight: bold; margin: 0; width: 5.5em; height: 1.5em; background: linear-gradient(to right, rgb(180, 180, 180), rgb(233, 233, 233));">最新的文章</button>？</br>或者先<button onclick="location.href='/about';" style="cursor:pointer; border-style: none; border-radius: 6px 6px 6px 6px; font-size: 25px; font-weight: bold; margin: 0; width: 4.5em; height: 1.5em; background: linear-gradient(to right, rgb(180, 180, 180), rgb(233, 233, 233));">了解孤灯</button>？</h2>
+        <div class="article">
+            <div style="height: 40px;"></div>
+            <h1 style="color: white;">关于 | About</h1>
+            <div style="height: 40px;"></div>
+            <div class="borderline"></div>
+            <div style="height: 40px;"></div>
         </div>
     </body>
 
-    <footer style="position: fixed; bottom: 0; left: 44vw;">
+    <footer>
         <p3>©2021 <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="color: rgb(199, 199, 199); font-weight: 800; font-family: 'STHei'; text-decoration: none;">ShuninYu</a>. All rights reserved.</br>Theme Closet designed by <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="color: rgb(199, 199, 199); font-weight: 800; font-family: 'STHei'; text-decoration: none;">ShuninYu</a>.</p3></p3>
     </footer>
 </html>
