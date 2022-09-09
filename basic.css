@@ -199,3 +199,16 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     height: 2px;
     background-color:rgb(177, 177, 177);
 }
+
+.colorbutton {
+    cursor:pointer;
+    border-style: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(to right, rgb(180, 180, 180), rgb(233, 233, 233));
+}
+
+.colorbutton:hover {
+    background: linear-gradient(to right, rgb(156, 156, 156), rgb(202, 202, 202)) !important;
+}
