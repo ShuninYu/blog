@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(192, 192, 192);
+}
+
 .list {
     list-style: none;
     color: white;
