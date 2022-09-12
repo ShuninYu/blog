@@ -214,7 +214,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 }
 
 .friendlink {
-    background-color: black;
+    background-color: gray;
     color: white;
     cursor: pointer;
     padding: 10px;
