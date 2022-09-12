@@ -212,3 +212,14 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 .colorbutton:hover {
     background: linear-gradient(to right, rgb(156, 156, 156), rgb(202, 202, 202)) !important;
 }
+
+.friendlink {
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.friendlink:hover {
+    background-color: rgb(235, 235, 235);
+}
