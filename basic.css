@@ -1,11 +1,22 @@
 @charset "uft-8";
 /* css document */
+@font-face
+{
+	font-family: Song;
+	src: url('./fonts/STSONG.TTF');
+}
+
+@font-face
+{
+	font-family: consola;
+	src: url('./fonts/consola.ttf');
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'STSong';
+    font-family: 'Song';
 }
 
 body {

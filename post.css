@@ -6,6 +6,24 @@ body {
     font-size: x-large;
 }
 
+code {
+    display: block;
+    font-family: 'consola';
+    border-radius: 10px;
+    font-size: large;
+    line-height: 2em;
+    overflow-x: scroll;
+}
+
+span {
+    font-family: 'consola';
+}
+
+.script {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -24,7 +42,8 @@ h3 {
 p {
     font-size: x-large;
     line-height: 2em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 p1 {
@@ -46,6 +65,7 @@ p4 {
     font-weight: bold;
     color: lightgray;
     margin-bottom: 1em;
+    text-align: right;
 }
 
 .image {
@@ -82,21 +102,6 @@ ul {
 
 .headimg {
     -webkit-filter: grayscale(50%);
-}
-
-.script {
-    background-color: rgb(39, 40, 34);
-    color: rgb(214, 242, 255);
-    border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Consolas';
-    font-size: large;
-    line-height: 2em;
-    overflow-x: auto;
-    white-space: nowrap;
 }
 
 .wordbutton{

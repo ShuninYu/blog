@@ -7,7 +7,10 @@
         <link rel="icon" href="../../icon/Beeduckven.jpg">
         <link rel="stylesheet" type="text/css" href="../../basic.css">
         <link rel="stylesheet" type="text/css" href="../../post.css">
+        <link rel="stylesheet" href="../../highlight/styles/monokai.min.css">
         <script src="../../basic.js" type="text/javascrip"></script>
+        <script src="../../highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
 
     <body>
@@ -101,46 +104,78 @@
             <!--使用 '&lt;' 来代替正文中的 '<'（左尖括号）-->
             <div>
                 <h2 id="别人是怎么做的">别人是怎么做的</h2>
+
                     <p>以Github Pages + Jekyll为例，用户只需要通过Jekyll部署Github Pages，完成基本设置，然后在_config.yml中添加</p>
-                    <div class="script">
-                        theme: <p4>/*Github官方支持的主题名*/</p4>
+
+                    <div>
+                        <pre><code>theme: &lt!--Github官方支持的主题名--></code></pre>
                     </div>
+
                     <p>或者</p>
-                    <div class="script">
-                        remote_theme: <p4>/*其他托管在Github的主题名*/</p4>
+                    
+                    <div>
+                        <pre><code>remote_theme: &lt!--其他托管在Github的主题名--></code></pre>
                     </div>
+
                     <p>就可以用选择的主题来生成一个静态blog网站。上传到github.io项目中的.md文件，通过网站浏览时就会自动套用用户设置的主题。很多Github Pages用户都是使用这样的方法搭建的个人blog网站，具体的操作在<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://docs.github.com/cn/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">Github官方文档</a>中有说明。</p>
+
                     <p>那么，我是怎么做的呢？</p>
+
                     <p>这要先从我怎么开始的说起。</p>
+
                 <h2 id="我是怎么开始的">我是怎么开始的</h2>
+
                     <p>我的网站是由Github Pages托管的自定义网站。</br>
                         首先，我按照官方的Page setup教程创建好了github.io项目，并且以Readme.md当作首页，成功的打开了我的网站。</p>
+
                     <img src="../../image/p/20200909a/01.jpg" class="image">
                     <p class="imgtext">茫茫的天空……白白的网页……</p>
+
                     <p>作为一个<del>从未</del>几乎没有接触过前端（大四选修浅学了一点Android开发）的人，即使当时的我对于这个网站的样子并不满意，也没有如何去改变它的头绪。</br>
                     于是乎，我打开了微信，问了一下有经验的大学舍友。</p>
+
                     <img src="../../image/p/20200909a/02.jpg" class="image">
+
                     <p>又于是乎，动手搜索了一下hexo和hugo，看了看发现需要用到git，而且有很多教程使用的是git bash。这就很尴尬了，因为我不是啥正经码农，我只是个兴趣使然的咸鱼，图方便用的Github Desktop管理Github项目，所以自己根本没有接触过git，也看不明白网上各种教程里的git指令。看了半天感觉自己不但没整明白，还一点进度都没有，就接着点开了舍友发的链接。</p>
+
                     <img src="../../image/p/20200909a/03.jpg" class="image">
+
                     <p>这是一个搜索结果，都是一些个人主页的项目，呈现的效果可以说是琳琅满目，但是也有相当一部分的网站都是像我上面说的一样，是套主题写文章的blog。</br>但是自诩有自己的审美的我怎么会接受单纯的套用现成的主题呢！说白了当时其实已经对自己网站的样式有了大概的设计和想法，想把网站做成自己想要的模样。看了一会之后突然想到，其实好像也可以自己写HTML啊，于是一不做二不休，同步项目文件，VSCode打开，创建index.html，开<del>席</del>工！</p>
+
                     <p>怀着激动的心情，我一边开着W3school和runoob一边奋笔疾书<span class="heimu" title="你知道的太多了">（感觉这两个网站的教程内容可以说是几乎一模一样）</span>，终于最初的网站诞生了—— <a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://www.shuninyu.fun">www.shuninyu.fun</a>（也就是左边的'主站'按钮跳转到的网站），这就是我现在的个人网站（当然这个域名是之后注册绑定的）。</p>
+
                     <p>在做完个人网站的框架之后，我发现其实暂时还没什么已经做完的东西好往上面放，又想到自己做网站的起因是看到了一个外国朋友以及我舍友的Blog之后，自己也想搭建一个可以分享自己的东西的平台。于是我就暂停了敲个人网站的步伐，转过头来敲自己的Blog网站。</p>
+
                 <h2 id="还是HTML">还是HTML</h2>
+
                     <p>大体的步骤还是类似的，按照网站的构造分好文件夹目录，再分别编写.html文件和.css/.js文件。不过这一次我没有先从主页做起，而是先从正文页开始写起，因为在我的设想中，我的Blog网站各个页面的主要布局都是一样的，即你<del>太美</del>现在所看到的这个布局。而在这种情况下，先做内容页就可以避免遇到先做好主页之后再做内容页时遇到布局冲突的问题。</p>
+
                     <p>在做好页面的基础构造之后，我开始写一个以后作为模板使用的文章页面，也就是归档里最下面的<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="../basic/basic">本站第一篇"文章"</a>。</p>
+
                     <p>之所以写.html文件做模板，是因为同上面说的一样，我的网站并不是基于Jekyll、Hugo等等建立的网站，而是自己手敲.html搭建的网站，这代表我不能通过上传.md文件来更新文章，而是要上传.html页面来更新文章。</p>
+
                     <p>虽然这么做听起来挺麻烦，但是实际上只要我做好了网站的架构，写好了文章页面的模板之后，通过HTML写blog和通过markdown写blog没有过多的差别，步骤上也不会太过繁琐，还能高度自定义。不过这么做也是有相应的弊端，最简单的就比如文章内嵌代码的样式很单一，而且不会根据语言来显示代码不同部分的颜色。虽然通过CSS和JS也能够实现差不多的效果，但是工作量还是比markdown要大得多。</br>除此之外还有一些写作上的不便，例如正文中的所有 ' &lt; ' 都要用 ' & lt; ' 来代替。</p>
+
                     <img src="../../image/p/20200909a/05.jpg" class="image">
                     <p class="imgtext">所以写图中这句话时我是看不到任何 ' &lt; ' 的，当然这句话也一样</p>
+
                     <p>还好作为一条懒狗，以现在的一切对我来说都完全够用了，而且实现的效果我还挺满意的。</p>
+
                 <h2 id="我是怎么做的">我是怎么做的</h2>
+
                     <p>在模板页文件中，首先先加入页面的固有元素，比如左右两侧的菜单栏、导航栏和页脚等等。然后再根据给正文预留的空间预置一些文章必备的结构，比如页头配图、标题线以及文章前言栏等等。毕竟是预制模板，目的就是省去每次都重新构造的麻烦，所以这些每次都会出现的部分就提前做好，到具体写文章时还可以根据需求微调。</p>
+
                     <p>因为每个页面的主要布局都是一样的，所以关于页面布局的&lt;style>都写在CSS中，在header里导入，JS同理。页面布局、功能都写完以后，再给模板页里添加各种注释，以便提醒我在编写上传一篇新的blog之前需要做些什么。一切工作完成后，就可以通过套用HTML模板来写blog了。</p>
+
                     <p>现在我写blog的步骤是：在VSCode中对应的目录下新建HTML文件，然后直接把模板文件的内容全部复制过来，再填上信息（页面title、文章标题、日期等等）写正文，写完正文之后手动修改Tag、建立文章内部导航，接着在归档页把新的blog添加上去<span class="heimu" title="知道真相的我眼泪掉下来">（是的，归档也是手动归档，可以说几乎所有工作都是手动的）</span>，把主页最新文章按钮导航到新blog。最后在Github Desktop里push一下就大功告成啦。</p>
+
                     <p>至于一些其他小规矩小细节，其实也有，但是太懒了懒得往上写。有些很简单的东西，比如我的每一篇blog要导入的图片都存在独立的文件夹里，并且按照在文章中的先后顺序从00<span class="heimu" title="知道真相的我眼泪掉下来">（00是页头配图，01开始是正文配图）</span>开始命名，每个图片的文件名相对上一张都+1，并且是逐个导入源文件（引用一张文件夹里导入一张）。这么做的目的是为了VSCode里引入图片的时候更方便无脑，每次只要把路径tab到blog的图片文件夹里，按一下 ↑ 再按一下tab引用排在最下面的那张图就可以了。</p>
+
                     <img src="../../image/p/20200909a/06.jpg" class="image">
                     <p class="imgtext">没错，这张图就是导入这张图的截图（并不是）</p>
+
                     <p>至此，我就这样愉快的开始了blog写作。</p>
+                    
                     <p>用什么写的呢？</br>不是markdown，而是HTML！</p>
             </div>
             <!--正文结束-->
