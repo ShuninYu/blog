@@ -25,11 +25,12 @@ span {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 60px;
 }
 
 h2 {
-    font-size: xx-large;
+    font-size: 40px;
     margin-top: 1em;
     padding-bottom: 1em;
 }
@@ -42,6 +43,15 @@ h3 {
 p {
     font-size: x-large;
     line-height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+ps {
+    font-size: 19px;
+    line-height: 1em;
+    font-weight: bold;
+    color: lightgray;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -64,7 +74,8 @@ p4 {
     line-height: 1em;
     font-weight: bold;
     color: lightgray;
-    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     text-align: right;
 }
 
