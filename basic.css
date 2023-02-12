@@ -16,24 +16,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Song';
+    /*font-family: 'Song';*/
 }
 
 body {
     line-height: 2.5em;
     background-color: gray;
+    font-size: 1.25rem;
+    font-weight: lighter;
 }
 
 /* 页脚 ↓ */
 footer {
     text-align: center;
     line-height: 1.5em;
-    color: rgb(199, 199, 199);
-    font-size: 17px;
+    color: rgb(200, 200, 200);
+    font-size: small;
     padding-bottom: 1vw;
     padding-top: 2vw;
 }
 /* 页脚 ↑ */
+
+p2 {
+    font-family: 'Song';
+}
 
 /*↓↓↓萌娘百科版文字黑幕↓↓↓*/
 span.heimu a.external,span.heimu a.external:visited,span.heimu a.extiw,span.heimu a.extiw:visited {
@@ -79,7 +85,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 .leftbutton {
     border-style: none;
     cursor:pointer;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
     width: 22vw;
     height: 10vh;
@@ -127,7 +133,6 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 .rightbutton {
     border-style: none;
     cursor:pointer;
-    font-weight: bold;
     margin: 0;
     width: 18vw;
     height: 5vh;
@@ -215,7 +220,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     cursor:pointer;
     border-style: none;
     border-radius: 6px;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
     background: linear-gradient(to right, rgb(180, 180, 180), rgb(233, 233, 233));
 }

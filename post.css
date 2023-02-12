@@ -3,8 +3,8 @@
 
 body {
     color: white;
-    font-size: x-large;
-    font-family: 'Song';
+    font-size: 1.25rem;
+    font-weight: lighter;
 }
 
 code {
@@ -14,10 +14,6 @@ code {
     font-size: large;
     line-height: 2em;
     overflow-x: scroll;
-}
-
-span {
-    font-family: 'consola';
 }
 
 .script {
@@ -32,6 +28,7 @@ h1 {
 
 h2 {
     font-size: 40px;
+    font-weight: normal;
     margin-top: 1em;
     padding-bottom: 1em;
 }
@@ -42,16 +39,15 @@ h3 {
 }
 
 p {
-    font-size: x-large;
     line-height: 2em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 
 ps {
-    font-size: 19px;
+    font-size: 0.825em;
     line-height: 1em;
-    font-weight: bold;
+    font-weight: normal;
     color: lightgray;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -61,8 +57,8 @@ p1 {
     font-size: large;
 }
 
-p2 {
-    font-size: x-large;
+p3 {
+    font-size: normal;
 }
 
 p4 {
@@ -71,9 +67,9 @@ p4 {
 }
 
 .imgtext {
-    font-size: 19px;
+    font-size: 0.825em;
     line-height: 1em;
-    font-weight: bold;
+    font-weight: normal;
     color: lightgray;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -83,12 +79,21 @@ p4 {
     border-radius: 10px;
     max-width: 100%;
     max-height: 70vh;
+    margin-top: 1em;
+}
+
+.sidetitle {
+    font-size: 1.5vw;
+    color:black;
+    text-align:center;
+    font-weight: normal;
+    line-height: 1.2em;
 }
 
 .tag {
     background-color: rgb(233, 233, 233);
-    font-size: x-large;
-    font-weight: bold;
+    font-size: large;
+    font-weight: normal;
     padding: 0.2em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -96,6 +101,10 @@ p4 {
     color: black;
     border-style: none;
     border-radius: 8px 8px 8px 8px;
+}
+
+.tag:hover {
+    background-color: rgb(222, 222, 222);
 }
 
 ul {

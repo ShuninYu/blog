@@ -33,8 +33,7 @@
             <div class="rightblanket">
                 <div style="overflow: hidden; padding-top: 5vh;">
                     <div class="line"></div>
-                    <div style="height: 1vh;"></div>
-                    <p2 style="font-size: 1.5vw; color:black; text-align:center; font-weight: bold; line-height: 1.2em;">页内导航</p2>
+                    <p class="sidetitle">页内导航</p2>
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
@@ -45,16 +44,15 @@
                 <button class="rightbutton" onclick="location.href='#我是怎么做的'">我是怎么做的</button>
                 <div style="overflow: hidden; padding-top: 3vh;">
                     <div class="line"></div>
-                    <div style="height: 1vh;"></div>
-                    <p2 style="font-size: 1.5vw; color:black; text-align:center; font-weight: bold; line-height: 1.2em;">Tags</p2>
+                    <p class="sidetitle">Tags</p2>
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
                 <!--文章标签，手动添加-->
                 <div style="padding-left: 1vh;padding-right:1vh;">
-                    <p2 class="tag">#HTML</p2>
-                    <p2 class="tag">#网站</p2></br>
-                    <p2 class="tag">#Github Pages</p2>
+                    <p3 class="tag">#HTML</p3>
+                    <p3 class="tag">#网站</p3><br>
+                    <p3 class="tag">#Github Pages</p3>
                 </div>
             </div>
         </div>
@@ -128,17 +126,23 @@
                     <p>我的网站是由Github Pages托管的自定义网站。</br>
                         首先，我按照官方的Page setup教程创建好了github.io项目，并且以Readme.md当作首页，成功的打开了我的网站。</p>
 
-                    <img src="../../image/p/20200909a/01.jpg" class="image">
-                    <p class="imgtext">茫茫的天空……白白的网页……</p>
+                    <div style="text-align: center;">
+                        <img src="../../image/p/20200909a/01.jpg" class="image">
+                        <p class="imgtext">茫茫的天空……白白的网页……</p>
+                    </div>
 
                     <p>作为一个<del>从未</del>几乎没有接触过前端（大四选修浅学了一点Android开发）的人，即使当时的我对于这个网站的样子并不满意，也没有如何去改变它的头绪。</br>
                     于是乎，我打开了微信，问了一下有经验的大学舍友。</p>
 
-                    <img src="../../image/p/20200909a/02.jpg" class="image">
+                    <div style="text-align: center;">
+                        <img src="../../image/p/20200909a/02.jpg" class="image">
+                    </div>
 
                     <p>又于是乎，动手搜索了一下hexo和hugo，看了看发现需要用到git，而且有很多教程使用的是git bash。这就很尴尬了，因为我不是啥正经码农，我只是个兴趣使然的咸鱼，图方便用的Github Desktop管理Github项目，所以自己根本没有接触过git，也看不明白网上各种教程里的git指令。看了半天感觉自己不但没整明白，还一点进度都没有，就接着点开了舍友发的链接。</p>
 
-                    <img src="../../image/p/20200909a/03.jpg" class="image">
+                    <div style="text-align: center;">
+                        <img src="../../image/p/20200909a/03.jpg" class="image">
+                    </div>
 
                     <p>这是一个搜索结果，都是一些个人主页的项目，呈现的效果可以说是琳琅满目，但是也有相当一部分的网站都是像我上面说的一样，是套主题写文章的blog。</br>但是自诩有自己的审美的我怎么会接受单纯的套用现成的主题呢！说白了当时其实已经对自己网站的样式有了大概的设计和想法，想把网站做成自己想要的模样。看了一会之后突然想到，其实好像也可以自己写HTML啊，于是一不做二不休，同步项目文件，VSCode打开，创建index.html，开<del>席</del>工！</p>
 
@@ -158,8 +162,10 @@
 
                     <ps>2023年2月3日update：现在自己手动添加了highlightjs，可以实现代码标色了。</ps>
 
-                    <img src="../../image/p/20200909a/05.jpg" class="image">
-                    <p class="imgtext">所以写图中这句话时我是看不到任何 ' &lt; ' 的，当然这句话也一样</p>
+                    <div style="text-align: center;">
+                        <img src="../../image/p/20200909a/05.jpg" class="image">
+                    <p class="imgtext">写图中这句话时我是看不到任何 ' &lt; ' 的，当然这句话也一样</p>
+                    </div>
 
                     <p>还好作为一条懒狗，以现在的一切对我来说都完全够用了，而且实现的效果我还挺满意的。</p>
 
@@ -173,8 +179,10 @@
 
                     <p>至于一些其他小规矩小细节，其实也有，但是太懒了懒得往上写。有些很简单的东西，比如我的每一篇blog要导入的图片都存在独立的文件夹里，并且按照在文章中的先后顺序从00<span class="heimu" title="知道真相的我眼泪掉下来">（00是页头配图，01开始是正文配图）</span>开始命名，每个图片的文件名相对上一张都+1，并且是逐个导入源文件（引用一张文件夹里导入一张）。这么做的目的是为了VSCode里引入图片的时候更方便无脑，每次只要把路径tab到blog的图片文件夹里，按一下 ↑ 再按一下tab引用排在最下面的那张图就可以了。</p>
 
-                    <img src="../../image/p/20200909a/06.jpg" class="image">
-                    <p class="imgtext">没错，这张图就是导入这张图的截图（并不是）</p>
+                    <div style="text-align: center;">
+                        <img src="../../image/p/20200909a/06.jpg" class="image">
+                        <p class="imgtext">没错，这张图就是导入这张图的截图（并不是）</p>
+                    </div>
 
                     <p>至此，我就这样愉快的开始了blog写作。</p>
                     
@@ -186,7 +194,7 @@
             <div class="borderline"></div>
         </div>
         <!--disqus start-->
-        <p3 style="color: black; font-size: 30px; font-weight: bold; margin-left: 30vw;">评论区<sub style="font-size: 16px;">（需要科学上网）</sub></p3>
+        <p3 style="color: black; font-size: 30px; font-weight: normal; margin-left: 30vw;">评论区<sub style="font-size: 16px;">（需要科学上网）</sub></p3>
         <div id="disqus_thread" style="width: 40vw; margin-left:30vw; background-color: white; border: solid 8px white; box-shadow: 0 0 0 8px rgb(66, 66, 66);"></div>
         <script>
             (function() { // DON'T EDIT BELOW THIS LINE
