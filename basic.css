@@ -231,14 +231,14 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 
 .friendlink {
     background-color: gray;
-    color: white;
+    color: black;
     cursor: pointer;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: 1s;
 }
 
 .friendlink:hover {
     background-color: white;
-    color: black;
+    color: gray;
 }
