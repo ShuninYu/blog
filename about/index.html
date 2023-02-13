@@ -27,7 +27,46 @@
         </div>
         <div class="leftheadershadow"></div>
         <div class="rightheader">
-            <div class="rightblanket"></div>
+            <div class="rightblanket">
+                <div style="color: black;">
+                    <h1 style="margin-top: 50px; margin-bottom: 20px; font-weight: normal;">当前时间</h1>
+                    <div class="line"></div>
+                    <span id="day" style="font-size: 30px; font-weight: normal;"></span></br>
+                    <span id="week" style="font-size: 30px; font-weight: normal;"></span></br>
+                    <span id="time" style="font-size: 30px; font-weight: normal;"></span></br>
+                    <div class="line"></div>
+                    <script>
+                        function show(){
+                            var date=new Date();
+                            var year=date.getFullYear();
+                            var month=date.getMonth()+1;
+                            month=month<10?month:month;
+                            var day=date.getDate();
+                            day=day<10?day:day;
+                            var week=date.getDay();
+                            week="日一二三四五六".charAt(week);
+                            week="星期"+week;
+                        
+                            var hour=date.getHours();
+                            hour=hour<10?"0"+hour:hour;
+                            var minute=date.getMinutes();
+                            minute=minute<10?"0"+minute:minute;
+                            var second=date.getSeconds();
+                            second=second<10?"0"+second:second;
+                        
+                            var result=year+"年 "+month+"月"+day+"日";
+                            var result2=week;
+                            var result3=hour+":"+minute+":"+second;
+                            document.getElementById("day").innerHTML=result;
+                            document.getElementById("week").innerHTML=result2;
+                            document.getElementById("time").innerHTML=result3;
+                        }
+                        
+                        show();
+                        setInterval("show()",1000);
+                    </script>
+                </div>
+            </div>
         </div>
         <div class="rightheadershadow"></div>
         <div id = "gotop">
@@ -60,21 +99,21 @@
             <div class="borderline"></div>
             <div style="height: 40px;"></div>
             <div>
-                <h2 style="margin-bottom: 30px;">关于我 | About me</h2>
-                <img src="../image/duckhead_circle.png" style="margin-bottom: 10px; padding-left: 10px;">
-                <p style="font-weight: bold; font-size: 30px; padding-left: 40px;">孤灯从流</p>
-                <p style="font-weight: bold; font-size: 25px; padding-left: 50px; color: rgba(255, 255, 255, 0.5);">ShuninYu</p>
-                <p style="font-weight: bold; font-size: 25px; padding-left: 10px; color: rgba(255, 255, 255, 0.5);">兴趣使然的咸鱼</p>
-                <div style="margin-bottom: 40px;"></div>
+                <h2 style="margin-bottom: 20px;">关于我 | About me</h2>
+                <img src="../image/duckhead_circle.png" style="margin-bottom: 10px; padding-left: 40px;">
+                <p style="font-weight: normal; font-size: 30px; padding-left: 70px;">孤灯从流</p>
+                <p style="font-weight: normal; font-size: 25px; padding-left: 75px; color: rgba(255, 255, 255, 0.5);">ShuninYu</p>
+                <p style="font-weight: normal; font-size: 25px; padding-left: 40px; color: rgba(255, 255, 255, 0.5);">兴趣使然的咸鱼</p>
+                <div style="margin-bottom: 20px;"></div>
                 <div class="borderline"></div>
             </div>
             <div class="asidebox">
                 ◽ 画画/打游戏/做游戏/捣鼓各种觉得有意思的东西/信仰创造力</br>
-                ◽ 梦想是当漫画家/游戏制作人，虽然道路很曲折但是梦想没有放弃</br>
-                ◽ 学过素描，高三第一次去美术班时素描和速写是画室画的最好的，但是集训费太贵<span class="heimu" title="知道真相之后眼泪掉下来">，最便宜的一家一个寒假都要9个W……</span>出不起，回去继续考文化课了</br>
-                ◽ 报志愿时曾经想当个码农<span class="heimu" title="知道真相之后眼泪掉下来">好做游戏</span>，但是最后读了个四年只学一次c的专业</br>
-                ◽ 代码基础只有大一学的c，目前在自学c#、html和css</br>
-                ◽ 喜欢赛车和足球，曼城死忠，F1车迷，没钱开赛车但是可以踢踢球，<span class="heimu" title="知道真相之后眼泪掉下来">前</span>院队、足协队<span class="heimu" title="知道真相之后眼泪掉下来">矮个</span>门将</br>
+                ◽ 梦想：成为漫画家、游戏制作人</br>
+                ◽ 学过素描，热爱漫画和游戏，喜欢有意思的独立游戏<span class="heimu" title="你知道的太多了">和自己做的游戏</span></br>
+                ◽ 报志愿时曾经想报个会敲代码的专业<span class="heimu" title="知道真相之后眼泪掉下来">做游戏</span>，但是最后读了个四年只学一次c的专业</br>
+                ◽ 代码基础只有大一学的c，自学c#、html和css（仍在学习中）</br>
+                ◽ 喜欢足球和赛车，曼城死忠，F1车迷，大学<span class="heimu" title="知道真相之后眼泪掉下来">前</span>院队、足协队<span class="heimu" title="知道真相之后眼泪掉下来">矮个</span>门将</br>
                  </br>
                  </br>
             </div>
