@@ -37,6 +37,22 @@ footer {
 }
 /* 页脚 ↑ */
 
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+a {
+    font-weight: normal;
+}
+
 p2 {
     font-family: 'Song';
 }

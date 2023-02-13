@@ -7,7 +7,10 @@
         <link rel="icon" href="../../icon/Beeduckven.jpg">
         <link rel="stylesheet" type="text/css" href="../../basic.css">
         <link rel="stylesheet" type="text/css" href="../../post.css">
+        <link rel="stylesheet" href="../../highlight/styles/monokai.min.css">
         <script src="../../basic.js" type="text/javascrip"></script>
+        <script src="../../highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
 
     <body>
@@ -49,10 +52,10 @@
                 <div style="height: 1vh;"></div>
                 <!--文章标签，手动添加-->
                 <div style="padding-left: 1vh;padding-right:1vh;">
-                    <p2 class="tag">#一个标签</p2>
-                    <p2 class="tag">#一个标签</p2>
-                    <p2 class="tag">#一个标签</p2>
-                    <p2 class="tag">#一个标签</p2>
+                    <p2 class="tag">#一个标签</p2></br>
+                    <p2 class="tag">#一个标签</p2></br>
+                    <p2 class="tag">#一个标签</p2></br>
+                    <p2 class="tag">#一个标签</p2></br>
                     <p2 class="tag">#一个标签</p2>
                 </div>
             </div>
@@ -105,7 +108,23 @@
                 <h2 id="h2-1">第一个二级标题</h2>
                     <h3>三级标题</h3>
                     <!--<p>正文块，表单<ul>表单单位<li>，文内标题<h2 id="(与标题相同)"> -->
-                    <p>正文</br>正文正文正文正文正文正文正文正文正文正文正文正文正文正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br></p>
+                    <p>正文</br>正文正文正文正文正文正文正文正文正文正文正文正文正文正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>
+                        <pre><code>using System;
+namespace HelloWorldApplication
+{
+    /* 类名为 HelloWorld */
+    class HelloWorld
+    {
+        /* main函数 */
+        static void Main(string[] args)
+        {
+            /* 我的第一个 C# 程序 */
+            Console.WriteLine("Hello World!");
+            Console.ReadKey();
+        }
+    }
+}</code></pre>
+                        正文</br>正文</br>正文</br>正文</br>正文</br>正文</br>正文</br></p>
                     <ul><!--表格内文字需要用p2-->
                         <li><p2>表单内容1</p2></li>
                         <li><p2>表单内容2</p2></li>

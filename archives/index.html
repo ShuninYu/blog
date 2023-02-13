@@ -29,11 +29,11 @@
         <div class="rightheader">
             <div class="rightblanket">
                 <div>
-                    <h1 style="margin-top: 20px; margin-bottom: 20px;">当前时间</h1>
+                    <h1 style="margin-top: 50px; margin-bottom: 20px; font-weight: normal;">当前时间</h1>
                     <div class="line"></div>
-                    <span id="day" style="font-size: 30px; font-weight: bold;"></span></br>
-                    <span id="week" style="font-size: 30px; font-weight: bold;"></span></br>
-                    <span id="time" style="font-size: 30px; font-weight: bold;"></span></br>
+                    <span id="day" style="font-size: 30px; font-weight: normal;"></span></br>
+                    <span id="week" style="font-size: 30px; font-weight: normal;"></span></br>
+                    <span id="time" style="font-size: 30px; font-weight: normal;"></span></br>
                     <div class="line"></div>
                     <script>
                         function show(){
@@ -69,11 +69,12 @@
                 <div style="overflow: hidden; padding-top: 2vh;">
                     <div class="line"></div>
                     <div style="height: 1vh;"></div>
-                    <p2 style="font-size: 1.5vw; color:black; text-align:center; font-weight: bold; line-height: 1.2em;">年份导航</p2>
+                    <p style="font-size: 1.5vw; color:black; text-align:center; font-weight: normal; line-height: 1.2em; padding-bottom: 0.4em;">年份导航</p2>
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
                 <!--页内导航按钮，手动添加-->
+                <button class="rightbutton" onclick="location.href='#2023'">2023 | 癸卯年</button>
                 <button class="rightbutton" onclick="location.href='#2022'">2022 | 壬寅年</button>
             </div>
         </div>
@@ -107,7 +108,8 @@
             <div style="height: 40px;"></div>
             <div class="borderline"></div>
             <div style="height: 40px;"></div>
-            <!-- ↓ 2022年的文章，新增年份就复制一套改一下-->
+            <!-- ↓ 2022年的文章，新增年份就在顶端复制一套改一下-->
+            <h1 id="2023" style="color: white; margin-top: 40px;">2023 | 癸卯年</h1>
             <h1 id="2022" style="color: white; margin-top: 40px;">2022 | 壬寅年</h1>
             <!--该年份归档开始-->
             <div style="width: 100%;overflow: hidden;">
@@ -118,7 +120,7 @@
                 <div class="preface">
                     <ul class="list"><!--此处填文章链接-->
                         <li><a href="/p/2022/20220909a">不是markdown，而是HTML！</a></li>
-                        <li><a href="/p/basic/basic">模板文章</a></li>
+                        <li><a href="/p/basic/basic">模板文章（已有新版，仅作纪念）</a></li>
                     </ul>
                 </div>
             </div>
