@@ -21,7 +21,7 @@
 
 body {
     line-height: 2.5em;
-    background-color: gray;
+    background-color: rgb(100, 100, 100);
     font-size: 1.25rem;
     font-weight: lighter;
 }
