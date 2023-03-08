@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+
+<channel>
+    <title>孤灯从流-Blog</title>
+    <link>https://blog.shuninyu.fun</link>
+    <description>是以泰山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。</description>
+    <pubDate>Thu, 08 Sep 2022 09:31:00 +0800</pubDate>
+    <generator>孤灯的双手以及VSCode</generator>
+    <copyright>©2022 ShuininYu. All rights reserved.</copyright>
+
+    <item>
+        <title>不是markdown，而是HTML！</title>
+        <link>https://blog.shuninyu.fun/p/2022/20220909a</link>
+        <guid>https://blog.shuninyu.fun/p/2022/20220909a</guid>
+        <pubDate>Fri, 09 Sep 2022 15:04:00 +0800</pubDate>
+        <description>现在很多人写blog使用的都是markdown语言，通过Jekyll、Hugo之类的静态站点生成器，上传.md文件就可以生成一个静态文章网页，非常的方便。而你现在所看的这篇文章——这个网站的所有页面，都是纯手敲的HTML+CSS+Javascript……</description>
+    </item>
+
+    <item>
+        <title>模板文章（已有新版，仅作纪念）</title>
+        <link>https://blog.shuninyu.fun/p/basic/basic</link>
+        <guid>https://blog.shuninyu.fun/p/basic/basic</guid>
+        <pubDate>Fri, 09 Sep 2022 08:34:00 +0800</pubDate>
+        <description>这是一个模板文章，除了展示文章的样式以外，主要拿来给我写文章时套用。因为网站是纯手敲的，所以能做出这个模板我还是挺满意的。</description>
+    </item>
+
+</channel>
+</rss>
