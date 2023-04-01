@@ -55,6 +55,9 @@ a {
 
 p2 {
     font-family: 'Song';
+    text-align:center;
+    font-weight: bold;
+    line-height: 1.2em;
 }
 
 /*↓↓↓萌娘百科版文字黑幕↓↓↓*/
@@ -103,7 +106,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     cursor:pointer;
     font-weight: normal;
     margin: 0;
-    width: 22vw;
+    width: 18vw;
     height: 10vh;
     min-height: 30px;
     background-color: white;
@@ -124,7 +127,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     position: fixed;
     top: 0;
     left: 0px;
-    width: 22vw;
+    width: 18vw;
     height: 100vh;
     z-index: 10;
 }
@@ -133,13 +136,13 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     background-color: white;
     text-align: center;
     overflow: hidden;
-    width: 22vw;
+    width: 18vw;
     height: 100vh;
 }
 
 .leftheadershadow {
     position: fixed;
-    left:22vw;
+    left:18vw;
     width: 20px;
     height: 100vh;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.1) , rgba(255, 255, 255, 0));
@@ -194,8 +197,8 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 }
 
 .article {
-    width: 78vw;
-    padding-left: 25vw;
+    width: 77vw;
+    padding-left: 22vw;
 }
 
 .boxleftline {
@@ -210,7 +213,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 
 .preface {
     background-color: rgb(110, 110, 110);
-    width: 99%;
+    width: 100%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.5em;

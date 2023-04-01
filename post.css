@@ -49,7 +49,7 @@ ps {
     font-size: 0.825em;
     line-height: 1em;
     font-weight: normal;
-    color: lightgray;
+    color: rgb(170, 170, 170);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -71,7 +71,7 @@ p4 {
     font-size: 0.825em;
     line-height: 1em;
     font-weight: normal;
-    color: lightgray;
+    color: rgb(170, 170, 170);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -115,9 +115,9 @@ ul {
 
 .headerimg {
     background-color: white;
-    padding-left: 22vw;
+    padding-left: 18vw;
     width: 82vw;
-    height: 14.6vw;
+    height: 16vw;
     overflow: hidden;
 }
 
