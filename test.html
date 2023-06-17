@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+        <script src="jquery200.js"></script>
 		
 	</head>
 	<body>
@@ -33,6 +34,87 @@
 			show();
 			setInterval("show()",1000);
 		</script>
+	<!--
+    <script>
+        $(function() {
+            //隐藏div
+        
+            $("#shouhou2").hide();
+            $("#shouhou3").hide();
+            //给div添加change事件
+            $("#type").change(function() {
+                if($(this).val() == 1 ) {
+                    $("#shouhou1").show();
+                    $("#shouhou2").hide();
+                    $("#shouhou3").hide();
+                } else if($(this).val() == 2 ) {
+                    $("#shouhou2").show();
+                    $("#shouhou1").hide();
+                    $("#shouhou3").hide();
+                }
+                else if($(this).val() == 3 ) {
+                    $("#shouhou3").show();
+                    $("#shouhou1").hide();
+                    $("#shouhou2").hide();
+                }
+            })
+        })
+    </script>
+        <select class="select" size="1" name="type" id="type">
+            
+            <option value="1">表格</option>
+            <option value="2">折线图</option>
+            <option value="3">柱状图</option>
+            
+        </select>
+        <div id="shouhou1" style>表格区域</div>
+        <div id="shouhou2" style>折线图区域</div>
+        <div id="shouhou3" style>柱状图区域</div>
+
+		使用id作为切换分组时有一个问题：id是唯一的 所以无法分组切换
+		jQuery支持class分组
+		使用下面的class分组能够实现分组切换
+		-->	
+
+	
+		<script>
+			$(function() {
+				//隐藏div
+			
+				$(".shouhou2").hide();
+				$(".shouhou3").hide();
+				//给div添加change事件
+				$("#type").change(function() {
+					if($(this).val() == 1 ) {
+						$(".shouhou1").show();
+						$(".shouhou2").hide();
+						$(".shouhou3").hide();
+					} else if($(this).val() == 2 ) {
+						$(".shouhou2").show();
+						$(".shouhou1").hide();
+						$(".shouhou3").hide();
+					}
+					else if($(this).val() == 3 ) {
+						$(".shouhou3").show();
+						$(".shouhou1").hide();
+						$(".shouhou2").hide();
+					}
+				})
+			})
+		</script>
+			<select class="select" size="1" name="type" id="type">
+				
+				<option value="1">表格</option>
+				<option value="2">折线图</option>
+				<option value="3">柱状图</option>
+				
+			</select>
+			<div class="shouhou1" style>表格区域</div>
+			<div class="shouhou2" style>折线图区域</div>
+			<div class="shouhou3" style>柱状图区域</div>
+			<div class="shouhou1" style>表格区域</div>
+			<div class="shouhou2" style>折线图区域</div>
+			<div class="shouhou3" style>柱状图区域</div>
 	
 	</body>
 </html>

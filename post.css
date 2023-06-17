@@ -93,12 +93,10 @@ p4 {
 
 .tag {
     background-color: rgb(233, 233, 233);
-    font-size: large;
-    font-weight: normal;
-    padding: 0.2em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    line-height: 2.5em;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 4px;
+    line-height: 40px;
     color: black;
     border-style: none;
     border-radius: 8px 8px 8px 8px;
@@ -106,6 +104,11 @@ p4 {
 
 .tag:hover {
     background-color: rgb(222, 222, 222);
+}
+
+.main {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 ul {

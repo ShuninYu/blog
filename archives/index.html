@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../basic.css">
         <script src="../basic.js" type="text/javascrip"></script>
         <script src="archives.js" type="text/javascrip"></script>
+        <script src="../jquery200.js"></script>
     </head>
 
     <body>
@@ -101,26 +102,119 @@
                 }
             }
         </script>
+        <script>
+			$(function() {
+				//隐藏div
+                //动画tagdonghua 游戏tagyouxi 经验tagjingyan 软件tagruanjian 硬件tagyingjian 杂谈tagzatan
+                //总共7种情况
+				//给div添加change事件
+				$("#type").change(function() {
+					if($(this).val() == 1) {
+						$(".tagdonghua").show();
+						$(".tagyouxi").show();
+						$(".tagjingyan").show();
+						$(".tagruanjian").show();
+						$(".tagyingjian").show();
+						$(".tagzatan").show();
+					} else if($(this).val() == 2) {
+						$(".tagdonghua").show();
+						$(".tagyouxi").hide();
+						$(".tagjingyan").hide();
+						$(".tagruanjian").hide();
+						$(".tagyingjian").hide();
+						$(".tagzatan").hide();
+					}
+					else if($(this).val() == 3) {
+						$(".tagdonghua").hide();
+						$(".tagyouxi").show();
+						$(".tagjingyan").hide();
+						$(".tagruanjian").hide();
+						$(".tagyingjian").hide();
+						$(".tagzatan").hide();
+					}
+					else if($(this).val() == 4) {
+						$(".tagdonghua").hide();
+						$(".tagyouxi").hide();
+						$(".tagjingyan").show();
+						$(".tagruanjian").hide();
+						$(".tagyingjian").hide();
+						$(".tagzatan").hide();
+					}
+					else if($(this).val() == 5) {
+						$(".tagdonghua").hide();
+						$(".tagyouxi").hide();
+						$(".tagjingyan").hide();
+						$(".tagruanjian").show();
+						$(".tagyingjian").hide();
+						$(".tagzatan").hide();
+					}
+					else if($(this).val() == 6) {
+						$(".tagdonghua").hide();
+						$(".tagyouxi").hide();
+						$(".tagjingyan").hide();
+						$(".tagruanjian").hide();
+						$(".tagyingjian").show();
+						$(".tagzatan").hide();
+					}
+					else if($(this).val() == 7) {
+						$(".tagdonghua").hide();
+						$(".tagyouxi").hide();
+						$(".tagjingyan").hide();
+						$(".tagruanjian").hide();
+						$(".tagyingjian").hide();
+						$(".tagzatan").show();
+					}
+				})
+			})
+		</script>
         <!--页面基础结构完成，从这之后开始增加页面内容-->
         <div class="article">
             <div style="height: 40px;"></div>
-            <h1 style="color: white;">文章归档 | Archives</h1>
+            <h1 class="top">文章归档 | Archives</h1>
             <div style="height: 40px;"></div>
             <div class="borderline"></div>
-            <div style="height: 40px;"></div>
+            <div>
+                <h1 class="top" style="display: inline-block; font-size: 30px;">按照类别筛选：</h1>
+                <select class="select" size="1" name="type" id="type">
+                    <option value="1">全部</option>
+                    <option value="2">动画</option>
+                    <option value="3">游戏</option>
+                    <option value="4">经验</option>
+                    <option value="5">软件</option>
+                    <option value="6">硬件</option>
+                    <option value="7">杂谈</option>
+                </select>
+            </div>
             <!-- ↓ 2022年的文章，新增年份就在顶端复制一套改一下-->
-            <h1 id="2023" style="color: white; margin-top: 40px;">2023 | 癸卯年</h1>
-            <h1 id="2022" style="color: white; margin-top: 40px;">2022 | 壬寅年</h1>
-            <!--该年份归档开始-->
-            <div style="width: 100%;overflow: hidden;">
+            <h1 id="2023" class="top" style="margin-top: 40px;">2023 | 癸卯年</h1>
+            <!--2023归档开始-->
+            <!--2023归档结束-->
+            <h1 id="2022" class="top" style="margin-top: 40px;">2022 | 壬寅年</h1>
+            <!--2022归档开始-->
+            <div style="width: 100%; overflow: hidden;">
                 <div class="preface">
                     <ul class="list"><!--此处填文章链接-->
-                        <li><a style="font-weight: lighter;" href="/p/2022/20220909a">不是markdown，而是HTML！</a></li>
-                        <li><a style="font-weight: lighter;" href="/p/basic/basic">模板文章（已有新版，仅作纪念）</a></li>
+                        <!--li标签内填上class以分类文章-->
+                        <li class="tagjingyan">
+                            <a href="/p/2022/20220909a">
+                                <div class="item">
+                                    <p>不是markdown，而是HTML！</p>
+                                    <p3>2022-9-9</p3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tagzatan">
+                            <a href="/p/basic/basic">
+                                <div class="item">
+                                    <p>模板文章（已有新版，仅作纪念）</p>
+                                    <p3>2022-9-9</p3>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <!--该年份归档结束-->
+            <!--2022归档结束-->
         </div>
     </body>
 

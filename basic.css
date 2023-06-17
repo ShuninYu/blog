@@ -60,6 +60,12 @@ p2 {
     line-height: 1.2em;
 }
 
+.top {
+    color: white;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
 /*↓↓↓萌娘百科版文字黑幕↓↓↓*/
 span.heimu a.external,span.heimu a.external:visited,span.heimu a.extiw,span.heimu a.extiw:visited {
     color: black
@@ -212,14 +218,16 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 }
 
 .preface {
-    background-color: rgb(110, 110, 110);
     width: 100%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
     margin-top: 1em;
     margin-bottom: 1em;
     float: left;
+}
+
+.intro {
+    background-color: rgb(80 , 80 , 80);
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .line {
