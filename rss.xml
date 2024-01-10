@@ -10,6 +10,14 @@
     <copyright>©2022 ShuininYu. All rights reserved.</copyright>
 
     <item>
+        <title>GithubDesktop找不到VSCode？</title>
+        <link>https://blog.shuninyu.fun/p/2024/20240110a</link>
+        <guid>https://blog.shuninyu.fun/p/2024/20240110a</guid>
+        <pubDate>Wed, 10 Jan 2024 23:38:00 +0800</pubDate>
+        <description>因为一些特殊原因（正文会详细说明）导致我有段时间没有更新网站和Blog。今天更新网站内容的时候发现GithubDesktop找不到VSCode，不能直接从软件里打开VSCode编辑项目文件。软件设置里也没有编辑器启动路径，于是简短的解密之旅开始了……</description>
+    </item>
+
+    <item>
         <title>不是markdown，而是HTML！</title>
         <link>https://blog.shuninyu.fun/p/2022/20220909a</link>
         <guid>https://blog.shuninyu.fun/p/2022/20220909a</guid>
