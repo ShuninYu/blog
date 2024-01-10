@@ -72,8 +72,8 @@ p4 {
     line-height: 1em;
     font-weight: normal;
     color: rgb(170, 170, 170);
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0;
+    padding-bottom: 1em;
 }
 
 .image {
@@ -124,10 +124,6 @@ ul {
     overflow: hidden;
 }
 
-.headimg {
-    -webkit-filter: grayscale(50%);
-}
-
 .wordbutton{
     cursor:pointer;
     border-style: none;
@@ -135,7 +131,7 @@ ul {
     margin: 0;
     color: white;
     text-decoration: none;
-    background-color: rgb(99, 99, 99)/*rgb(0, 1, 58)*/;
+    background-color: rgb(99, 120, 120)/*rgb(0, 1, 58)*/;
 }
 
 .wordbutton:hover {

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GithubDesktop找不到VSCode？ | 孤灯的Blog</title>
+        <link rel="icon" href="../../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../basic.css">
+        <link rel="stylesheet" type="text/css" href="../../post.css">
+        <link rel="stylesheet" href="../../highlight/styles/monokai.min.css">
+        <script src="../../basic.js" type="text/javascrip"></script>
+        <script src="../../highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body>
+        <div class="leftheader">
+            <div class="leftblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <p2 style="font-size: 3vw; color:black;">孤灯从流</br>的博客</br></p2>
+                    <p2 style="font-size: 2vw; color:gray;">ShuninYu 's Blog</p2>
+                </div>
+                <div style="height: 5vh;"></div>
+                <button class="leftbutton" onclick="location.href='/'">主页
+                <button class="leftbutton" onclick="location.href='/archives'">归档
+                <button class="leftbutton" onclick="location.href='/about'">关于
+                <button class="leftbutton" onclick="location.href='/friends'">友链
+                <button class="leftbutton" onclick="location.href='https://www.shuninyu.fun'">主站</button>
+            </div>
+        </div>
+        <div class="leftheadershadow"></div>
+        <div class="rightheader">
+            <div class="rightblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <div class="line"></div>
+                    <p class="sidetitle">页内导航</p2>
+                </div>
+                <div class="line"></div>
+                <div style="height: 1vh;"></div>
+                <button class="rightbutton" onclick="location.href='#Windows11'">Windows11
+                <button class="rightbutton" onclick="location.href='#GithubDesktop'">GithubDesktop
+                <button class="rightbutton" onclick="location.href='#消失的“它”'">消失的“它”
+                <button class="rightbutton" onclick="location.href='#题外话(Win11截图功能)'">题外话(Win11截图功能)</button>
+                <div style="overflow: hidden; padding-top: 3vh;">
+                    <div class="line"></div>
+                    <p class="sidetitle">Tags</p2>
+                </div>
+                <div class="line"></div>
+                <div style="height: 1vh;"></div>
+                <div style="padding-left: 1vh;padding-right:1vh;">
+                    <p3 class="tag main">#经验</p3><br>
+                    <p3 class="tag">#Github</p3><br>
+                    <p3 class="tag">#VSCode</p3><br>
+                    <p3 class="tag">#GithubDesktop</p3>
+                </div>
+            </div>
+        </div>
+        <div class="rightheadershadow"></div>
+        <div id = "gotop">
+            <img src="../../image/Button_Duck_GoToTop_2.png" alt="gotop">
+        </div>
+        <script>
+            window.addEventListener("scroll",handle)
+
+            function handle(){
+                var oTop = document.body.scrollTop||document.documentElement.scrollTop
+                if(oTop>=80){
+                    gotop.style.display = "block";
+                }else{
+                    gotop.style.display = "none";
+                }
+
+                gotop.onclick = function(){
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth"
+                    })
+                }
+            }
+        </script>
+        <div class="headerimg">
+            <img class="headimg" src="../../image/p/basic/00.png" style="width: 100%;">
+        </div>
+        <div class="article">
+            <div style="width: 100%; height:80px;"></div>
+            <!--文章开始-->
+            <h1>GithubDesktop找不到VSCode？</h1>
+            <div class="borderline"></div>
+            <p1>2024-1-10 - 23:38 | 最后更新：2024-1-10</p1>
+            <div style="width: 100%; overflow: hidden;">
+                <p class="preface intro">
+                    因为一些特殊原因（正文会详细说明）导致我有段时间没有更新网站和Blog。今天更新网站内容的时候发现GithubDesktop找不到VSCode，不能直接从软件里打开VSCode编辑项目文件。软件设置里也没有编辑器启动路径，于是简短的解密之旅开始了……
+                </p>
+            </div>
+            <div style="height: 40px;"></div>
+            
+            <!--正文开始-->
+            <div>
+                <h2 id="Windows11">Windows11</h2>
+                <p>一切的一切都要从换新电脑以后开始说起。</p>
+                <p>新电脑cpu是13900k，所以为了“充分发挥大小核的性能”，也为了满足我对Win11图形界面的好奇，新电脑的系统就选择了Windows11。</p>
+                <p>虽然有些奇葩的交互修改，但是一开始Win11用起来还算稳定且顺手，没有什么bug也没出什么问题，而且更加“Mac化”的图形界面也深得我心。但是在微软几个月连续强制推送各种更新之后，我的系统成功出现了各种奇葩问题，最后甚至导致系统频繁蓝屏并且出现开机进入不了桌面的情况，于是乎我被迫重装了系统。重装完后痛定思痛，我用Update Blocker锁定了Windows更新，强制系统停留在最稳定的装机时的版本。</p>
+                <p>而我当初的一个疏忽导致了一个严重的问题。我的没有写完（或者正文基本写完但是没有转换成html格式完成文章整体构建）的blog、一些作品的想法和构思、部分计划表等等，都被我放在桌面的一个文件夹里……所以重装系统以后他们全部都不复存在了（包括我的待写、待上传的blog的清单）。而我的备份是更早期的版本，没有上传的blog都还没有被备份。</br>这也是为什么我的blog很长时间没有更新，因为源文件都没了……</p>
+                <p>除了文档没了，我的注册表也跟着遭了殃，而这个问题就促成了这篇blog。</p>
+
+                <h2 id="GithubDesktop">GithubDesktop</h2>  
+                <p>因为我不是专业码农，所以我的Github项目管理都是用的GithubDesktop，这个小巧的软件成了我的git平替，基本就是一个网站管理器。（详见<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://blog.shuninyu.fun/p/2022/20220909a">这篇文章</a>）<br/>因为blog原文都没了，所以我很长一段时间没有对网站进行更新，把重心放在了其他事情上。而今天久违的有更新网站的计划，我就开心的打开熟悉的GtihubDesktop，切换到要更新的网站项目，按下ctrl+shift+a用VSCode打开项目……</p>
+                <p>然而VSCode没有打开，取而代之的是一个提示窗口的弹出：</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/01.png" class="image">
+                    <p class="imgtext">当时没有截图，所以找了张同样问题的截图来代替</p>
+                </div>
+                <p>在看到这个弹窗之后我马上打开GithubDesktop的设置，尝试手动设定VSCode的启动路径，然而……</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/02.png" class="image">
+                    <p class="imgtext">GithubDesktop的设置窗口</p>
+                </div>
+                <p>……设置里面并没有这个功能。</p>
+                <p>一脸懵逼的我看了下Windows状态栏：</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/03.png" class="image">
+                </div>
+                <p>我这不是正在用VSCode吗?!而且还是重装系统后重新安装了一遍的VSCode，注册表应该没有缺失才对。</p>
+                <p>怀着疑问我打开了Google，搜索了一下“github desktop can't find vscode”。</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/04.png" class="image">
+                    <p class="imgtext">直截了当的搜索结果</p>
+                </div>
+                <p>点开这个issue后，看到反馈者遇到的是和我一样的问题，并且我和他的情况也基本一致。<br/>而其他人给到的回复如下图：</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/05.png" class="image">
+                    <p class="imgtext">GithubDesktop通过注册表的卸载key来定位VSCode</p>
+                </div>
+                <p>可能因为我本人是个外行所以不懂，难道在设置里添加一个用户手动选择/输入软件路径就行不通？为什么是通过卸载key来定位软件位置？对于这么做的理由和必要性，我百思不得其解……但是毕竟已经给出了原理，那就开始对症下药。</p>
+                <p>按照这个回答的说法，要么是安装VSCode的时候没有生成这个注册表key，要么就是生成的和应该有的（或者GithubDesktop能识别的）key有区别。那这个uninstall key肯定是指VSCode的key，那么我就翻到了HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\<br/>发现uninstall key是“正常”存在的。</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/06.png" class="image">
+                    <p class="imgtext">你不就搁这呢吗？</p>
+                </div>
+                <p>“正常”之所以打了双引号，是因为这个正常只是表面正常。</p>
+
+                <h2 id="消失的“它”">消失的“它”</h2>
+                <p>其实有经验的话应该已经想到了，虽然这个键值存在，但是它的内容肯定是有问题的，否则不可能GithubDesktop识别不出来。</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/07.png" class="image">
+                    <p class="imgtext">{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1的“内在”</p>
+                </div>
+                <p>其中有一项是InstallLocation，这一项当时指向的是C盘的AppData\Local\Programs\Microsoft VS Code。而我一眼就感觉这个位置不太对劲，因为我平时是不会把软件安在C盘的，于是我打开了这个路径：</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/08.png" class="image">
+                    <p class="imgtext">全部内容已在此……一眼顶真，鉴定为废</p>
+                </div>
+                <p>接着我打开了任务管理器，通过进程定位了一下我使用的VSCode的位置，而结果就是上面注册表截图中的结果。<p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/09.png" class="image">
+                    <p class="imgtext">注意路径和上文提到的路径的区别</p>
+                </div>
+                </p>这就证明了注册表中的路径其实是个错误路径，通过这个路径是找不到VSCode的可执行文件的，这也导致了Github Desktop报错。至于为什么会出现错误的路径，我其实也没有什么头绪，可能是重新安装前没有卸载干净，或者其他的安装VSCode时产生的问题。<br/>但是总而言之，把InstallLocation的路径换成正常路径之后问题就解决了。重启GithubDesktop后一切恢复正常，快捷键也能够把项目在VSCode中打开了。</p>
+                
+                <h2 id="题外话(Win11截图功能)">题外话(Win11截图功能)</h2>
+                <p>写这篇blog的时候大部分的截图是使用的Win11自带的截图功能。Win11自带截图工具虽然功能不如QQ截图那么强大全面，但是操作还是很方便的。呼出工具后框选要截取的部分，截取的部分就会自动保存到默认路径，并且复制到剪贴板。快捷键是Win+shift+s，也可以通过Print Screen键呼出，但是我建议在设置中关闭Print键呼出。因为Win11截图工具和QQ截图一样，打开后会有覆盖层，平时容易误触（尤其是在玩游戏的时候，毕竟steam截图键F12就在print旁边），而且还和Windows一直有的全屏截图键位冲突。</p>
+                <p>具体的关闭方法：打开Windows设置 → 辅助功能 → 键盘<br/>找到屏幕键盘、访问键和打印屏幕，关闭“Use the Print screen key to open Snipping Tool”</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/10.png" class="image">
+                </div>
+                <p>上面也提到，Win11的截图工具会在框选完截取区域后自动保存截图文件。而这个文件的保存路径默认是在C:\Users\*用户名*\图片\屏幕截图，没错，就算你在系统设置里更改了用户默认文件存储盘，它还是会把截图存在C盘。修改这个问题也很简单，打开这个路径，对着屏幕截图文件夹右键打开属性 → 位置，然后更改文件夹位置就可以了。</p>
+                <div style="text-align: center;">
+                    <img src="../../image/p/2024/20240110a/11.png" class="image">
+                    <p class="imgtext">图为我修改后的路径</p>
+                </div>
+                <p>Win11自带的截图工具应付基础的截屏功能也够用，而且不像QQ截图需要登录QQ后才能使用。把上面两个地方设置好以后可以作为其他截图方法的分支来使用。日常的截图我就会用QQ截图，并且一直把截到的图片存在固定的路径里，而blog中的图片则会使用Win11自带截图，存储的位置和QQ截图不同，来方便往blog文件夹导图。</p>
+
+            </div>
+            <!--正文结束-->
+            <!--文章结束-->
+            <div style="width: 100%; height:80px;"></div><!--底部空间-->
+            <div class="borderline"></div>
+        </div>
+        <!--disqus start-->
+        <p3 style="color: black; font-size: 30px; font-weight: normal; margin-left: 30vw;">评论区<sub style="font-size: 16px;">（需要科学上网）</sub></p3>
+        <div id="disqus_thread" style="width: 40vw; margin-left:30vw; background-color: white; border: solid 8px white; box-shadow: 0 0 0 8px rgb(66, 66, 66);"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://blog-shuninyu.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <!--disqus end-->
+    </body>
+
+    <footer>
+        <p3>©2021 <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="color: rgb(199, 199, 199); font-weight: 800; font-family: 'STHei'; text-decoration: none;">ShuninYu</a>. All rights reserved.</br>Theme Closet designed by <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="color: rgb(199, 199, 199); font-weight: 800; font-family: 'STHei'; text-decoration: none;">ShuninYu</a>.</p3>
+    </footer>
+</html>
