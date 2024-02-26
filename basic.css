@@ -96,13 +96,14 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     right: 20px;
     bottom: 20px;
     z-index: 11;
+    width: 114px;
+    height: 72px;
+    background-image: url("image/Button_Duck_GoToTop.png");
+    background-size: contain;
+    image-rendering: pixelated;
 }
 
-#gotop img{
-    width: 130px;
-}
-
-#gotop img:hover{
+#gotop:hover{
     cursor: pointer;
 }
 /*到顶部↑*/
@@ -268,4 +269,28 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 .friendlink:hover {
     background-color: white;
     color: gray;
+}
+
+.pixel {
+    image-rendering: pixelated;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #f5f5f5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(186, 183, 183);
+    background-color: #f5f5f5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgb(186, 183, 183);
+    background-color: rgb(190, 190, 190);
 }

@@ -67,6 +67,29 @@ p4 {
     font-family: 'Consolas';
 }
 
+.imgbox {
+    text-align: center;
+}
+
+.imgbox p {
+    font-size: 0.825em;
+    line-height: 1em;
+    font-weight: normal;
+    color: rgb(170, 170, 170);
+    padding-top: 0;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.imgbox img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 70vh;
+    margin-top: 1em;
+    padding-left: auto;
+    padding-right: auto;
+}
+
 .imgtext {
     font-size: 0.825em;
     line-height: 1em;
@@ -74,6 +97,7 @@ p4 {
     color: rgb(170, 170, 170);
     padding-top: 0;
     padding-bottom: 1em;
+    text-align: center;
 }
 
 .image {
@@ -81,6 +105,8 @@ p4 {
     max-width: 100%;
     max-height: 70vh;
     margin-top: 1em;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .sidetitle {
