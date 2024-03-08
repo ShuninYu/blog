@@ -290,7 +290,7 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
+    border-radius: 6px;
     -webkit-box-shadow: inset 0 0 6px rgb(186, 183, 183);
     background-color: rgb(190, 190, 190);
 }

@@ -1,2 +1,93 @@
 @charset "uft-8";
 /* css document */
+
+.homecover {
+    line-height: 1em;
+    width: 500px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.homecover:hover {
+    background-color: rgba(0 , 0 , 0 , 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.homecover p {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: white;
+}
+
+.homecover p2 {
+    font-size: 0.8em;
+    font-weight: lighter;
+    color: white;
+}
+
+.latest {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    text-align: left;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(160 , 160 , 160);
+}
+
+.homelatest {
+    width: 70%;
+    height: 300px;
+    background-color: rgb(90 , 90 , 90);
+    border-radius: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.homelatest:hover {
+    background-color: rgb(80 , 80 , 80);
+    transition: 0.5s;
+}
+
+.latesta {
+    text-decoration: none;
+    color: rgb(255 , 255 , 255);
+}
+
+.latesta h1 {
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 800px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.latesta p{
+    font-weight: lighter;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.latesta p10086{
+    font-weight: lighter;
+    line-height: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
