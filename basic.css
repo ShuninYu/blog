@@ -19,21 +19,201 @@
     /*font-family: 'Song';*/
 }
 
+/*颜色模式*/
+@media (prefers-color-scheme:light){
+    /* 当系统是使用浅色模式 */
+    body{
+        background-color: rgb(100, 100, 100);
+        color: rgb(255 , 255 , 255);
+    }
+
+    footer {
+        color: rgb(200, 200, 200);
+    }
+
+    footer a{
+        color: rgb(199, 199, 199);
+    }
+
+    .leftblanket p2 {
+        color: black;
+    }
+
+    .leftblanket p3 {
+        color: gray;
+    }
+
+    .leftheader .leftblanket {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .leftbutton {
+        background-color: white;
+        color: rgb(160 ,160 ,160);
+    }
+
+    .leftbutton:hover {
+        background-color: rgb(233, 233, 233);
+        color: black;
+    }
+
+    .rightheader .rightblanket {
+        color: black;
+        background-color: white;
+    }
+
+    .rightbutton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .rightbutton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
+
+    .line {
+        background-color: rgb(233, 233, 233);
+    }
+}
+
+@media (prefers-color-scheme:dark){
+    /* 当系统是使用深色模式 */
+    body{
+        background-color: rgb(42 , 41 , 49);
+        color: rgb(200, 200, 200);
+    }
+
+    footer {
+        color: rgb(88, 76, 110);
+    }
+
+    footer a{
+        color: rgb(92, 78, 109);
+    }
+
+    .leftblanket p2 {
+        color: rgb(200, 170, 255);
+    }
+
+    .leftblanket p3 {
+        color: rgb(100, 80, 130);
+    }
+
+    .leftheader .leftblanket {
+        background-color: rgb(37, 35, 44);
+    }
+
+    .leftbutton {
+        color: rgb(100, 80, 130);
+        background-color: rgb(37, 35, 44);
+    }
+
+    .leftbutton:hover {
+        color: rgb(200, 170, 255);
+        background-color: rgb(29, 27, 34);
+    }
+    
+    .rightheader .rightblanket {
+        color: rgb(200, 170, 255);
+        background-color: rgb(37, 35, 44);
+    }
+
+    .rightbutton {
+        color: rgb(100, 80, 130);
+        background-color: rgb(37, 35, 44);
+    }
+
+    .rightbutton:hover {
+        color: rgb(200, 170, 255);
+        background-color: rgb(29, 27, 34);
+    }
+
+    .line {
+        background-color: rgb(100, 80, 130);
+    }
+}
+
+@media (prefers-color-scheme:no-preference){
+    /* 没有设定系统模式时 照搬浅色模式 */
+    body{
+        background-color: rgb(100, 100, 100);
+        color: rgb(255 , 255 , 255);
+    }
+
+    footer {
+        color: rgb(200, 200, 200);
+    }
+
+    footer a{
+        color: rgb(199, 199, 199);
+    }
+
+    .leftblanket p2 {
+        color: black;
+    }
+
+    .leftblanket p3 {
+        color: gray;
+    }
+
+    .leftheader .leftblanket {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .leftbutton {
+        background-color: white;
+        color: rgb(160 ,160 ,160);
+    }
+
+    .leftbutton:hover {
+        background-color: rgb(233, 233, 233);
+        color: black;
+    }
+
+    .rightheader .rightblanket {
+        color: black;
+        background-color: white;
+    }
+
+    .rightbutton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .rightbutton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
+
+    .line {
+        background-color: rgb(233, 233, 233);
+    }
+}
+
 body {
     line-height: 2.5em;
-    background-color: rgb(100, 100, 100);
     font-size: 1.25rem;
     font-weight: lighter;
+    transition: 0.5s;
 }
 
 /* 页脚 ↓ */
 footer {
     text-align: center;
     line-height: 1.5em;
-    color: rgb(200, 200, 200);
     font-size: small;
     padding-bottom: 1vw;
     padding-top: 2vw;
+    user-select: none;
+}
+
+footer p3 {
+    font-family: 'STHei';
+    text-align: center;
+    line-height: 1.5em;
+    font-size: small;
+    font-weight: lighter;
 }
 /* 页脚 ↑ */
 
@@ -58,10 +238,35 @@ p2 {
     text-align:center;
     font-weight: bold;
     line-height: 1.2em;
+    font-size: 3vw;
+    text-align:center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+p3 {
+    font-family: 'Song';
+    text-align:center;
+    font-weight: bold;
+    line-height: 1.2em;
+    font-size: 2vw;
+    text-align:center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.body {
+    width: 78vw;
+    padding-left: 22vw;
+    text-align: center;
+}
+
+#color-mode:checked ~ .body {
+    /*background:black;*/
+    /*color:white;*/
 }
 
 .top {
-    color: white;
     font-size: 36px;
     font-weight: lighter;
 }
@@ -116,18 +321,8 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     width: 18vw;
     height: 10vh;
     min-height: 30px;
-    background-color: white;
-    color: black;
     font-size: large;
-    filter: opacity(0.7);
-    opacity: 0.7;
-    transition: 1s;
-}
-
-.leftbutton:hover {
-    background-color: rgb(233, 233, 233);
-    filter: opacity(1);
-    opacity: 1;
+    transition: 0.5s;
 }
 
 .leftheader {
@@ -137,10 +332,10 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     width: 18vw;
     height: 100vh;
     z-index: 10;
+    user-select: none;
 }
 
 .leftheader .leftblanket {
-    background-color: white;
     text-align: center;
     overflow: hidden;
     width: 18vw;
@@ -163,18 +358,9 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     width: 18vw;
     height: 5vh;
     min-height: 30px;
-    background-color: white;
-    color: black;
     font-size: large;
-    filter: opacity(0.7);
-    opacity: 0.7;
-    transition: 1s;
-}
-
-.rightbutton:hover {
-    background-color: rgb(233, 233, 233);
-    filter: opacity(1);
-    opacity: 1;
+    font-weight: lighter;
+    transition: 0.5s;
 }
 
 .rightheader {
@@ -184,10 +370,10 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     width: 18vw;
     height: 100vh;
     z-index: 10;
+    user-select: none;
 }
 
 .rightheader .rightblanket {
-    background-color: white;
     text-align: center;
     overflow: hidden;
     width: 18vw;
@@ -222,7 +408,6 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     height: 3px;
     margin-left: 5vh;
     margin-right: 5vh;
-    background-color: rgb(233, 233, 233);
 }
 
 .colorbutton {
@@ -236,20 +421,6 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 
 .colorbutton:hover {
     background: linear-gradient(to right, rgb(156, 156, 156), rgb(202, 202, 202)) !important;
-}
-
-.friendlink {
-    background-color: gray;
-    color: black;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 30px;
-    transition: 1s;
-}
-
-.friendlink:hover {
-    background-color: white;
-    color: gray;
 }
 
 .pixel {

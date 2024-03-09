@@ -2,7 +2,6 @@
 /* css document */
 
 body {
-    color: white;
     font-size: 1.25rem;
     font-weight: lighter;
 }
@@ -14,6 +13,78 @@ code {
     font-size: large;
     line-height: 2em;
     overflow-x: scroll;
+}
+
+@media (prefers-color-scheme:light){
+    .intro {
+        background-color: rgb(80 , 80 , 80);
+    }
+
+    .imgbox p{
+        color: rgb(170, 170, 170);
+    }
+
+    .sidetitle {
+        color:rgb(0, 0, 0);
+    }
+
+    .disqus {
+        background-color: white;
+        border: solid 10px white;
+        border-radius: 20px;
+        box-shadow: 0 0 0 10px rgb(194, 198, 204);
+    }
+
+    .tag {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233 , 233 , 233);
+    }
+
+    .tag:hover {
+        background-color: rgb(222 , 222 , 222);
+    }
+}
+
+@media (prefers-color-scheme:dark){
+    .intro {
+        background-color: rgb(37 , 35 , 44);
+    }
+
+    .headerimg {
+        filter: brightness(80%);
+    }
+
+    .imgbox img {
+        filter: brightness(80%);
+    }
+
+    .imgbox p{
+        color: rgb(100, 100, 100);
+    }
+
+    .sidetitle {
+        color: rgb(200, 170, 255);
+    }
+
+    .disqus {
+        background-color: rgb(42 , 41 , 49);
+        border: solid 20px rgb(42 , 41 , 49);
+        border-radius: 20px;
+        box-shadow: 0 0 0 10px rgb(177, 177, 177);
+    }
+
+    .tag {
+        color: rgb(200, 170, 255);
+        background-color: rgb(32, 31, 36);
+    }
+
+    .tag:hover {
+        background-color: rgb(30, 29, 32);
+    }
+}
+
+@media (prefers-color-scheme:no-preference){
+    
 }
 
 .script {
@@ -58,10 +129,6 @@ p1 {
     font-size: large;
 }
 
-p3 {
-    font-size: normal;
-}
-
 p4 {
     color: gray;
     font-family: 'Consolas';
@@ -75,7 +142,6 @@ p4 {
 }
 
 .intro {
-    background-color: rgb(80 , 80 , 80);
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 20px;
@@ -95,7 +161,6 @@ p4 {
     font-size: 0.825em;
     line-height: 1em;
     font-weight: normal;
-    color: rgb(170, 170, 170);
     padding-top: 0;
     padding-bottom: 1em;
     text-align: center;
@@ -110,46 +175,21 @@ p4 {
     padding-right: auto;
 }
 
-.imgtext {
-    font-size: 0.825em;
-    line-height: 1em;
-    font-weight: normal;
-    color: rgb(170, 170, 170);
-    padding-top: 0;
-    padding-bottom: 1em;
-    text-align: center;
-}
-
-.image {
-    border-radius: 10px;
-    max-width: 100%;
-    max-height: 70vh;
-    margin-top: 1em;
-    padding-left: auto;
-    padding-right: auto;
-}
-
 .sidetitle {
     font-size: 1.5vw;
-    color:black;
     text-align:center;
     font-weight: normal;
     line-height: 1.2em;
 }
 
 .tag {
-    background-color: rgb(233, 233, 233);
     font-size: 18px;
     font-weight: lighter;
+    font-family: 'STHei';
     padding: 4px;
     line-height: 40px;
-    color: black;
     border-style: none;
     border-radius: 8px 8px 8px 8px;
-}
-
-.tag:hover {
-    background-color: rgb(222, 222, 222);
 }
 
 .main {
@@ -189,4 +229,19 @@ ul {
 
 .wordbutton:hover {
     background-color:  rgb(80, 80, 80)/*rgb(0, 31, 97)*/;
+}
+
+.disqus {
+    width: 40vw;
+    margin-left:30vw;
+}
+
+.disqusp {
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 30vw;
+}
+
+.disqusp sub{
+    font-size: 16px;
 }

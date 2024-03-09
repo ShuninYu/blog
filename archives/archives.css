@@ -1,8 +1,84 @@
 @charset "uft-8";
 /* css document */
 
+@media (prefers-color-scheme:light){
+    a {
+        color: white;
+    }
+
+    .select {
+        color: rgb(255 , 255 , 255);
+        background-color: rgb(80, 80, 80);
+    }
+
+    .select:hover {
+        background-color: rgb(76, 76, 76);
+    }
+
+    .item {
+        background-color: rgb(90, 90, 90);
+    }
+
+    .item:hover {
+        background-color: rgb(80, 80, 80);
+    }
+}
+
+@media (prefers-color-scheme:dark){
+    a {
+        color: rgb(200 , 200 , 200);
+    }
+
+    .select {
+        color: rgb(200 , 200 , 200);
+        background-color: rgb(37, 35, 44);
+    }
+
+    .select:hover {
+        background-color: rgb(33, 31, 40);
+    }
+
+    option:hover {
+        background-color: rgb(18, 56, 56);
+    }
+
+    .item {
+        background-color: rgb(37, 35, 44);
+    }
+
+    .item:hover {
+        background-color: rgb(33, 31, 40);
+    }
+}
+
+@media (prefers-color-scheme:no-preference){
+    a {
+        color: white;
+    }
+
+    .select {
+        color: rgb(255 , 255 , 255);
+        background-color: rgb(80, 80, 80);
+    }
+
+    .select:hover {
+        background-color: rgb(76, 76, 76);
+    }
+
+    .item {
+        background-color: rgb(90, 90, 90);
+    }
+
+    .item:hover {
+        background-color: rgb(80, 80, 80);
+    }
+}
+
+body {
+    user-select: none;
+}
+
 a {
-    color: white;
     cursor: pointer;
     text-decoration: none;
 }
@@ -15,8 +91,6 @@ a {
     font-size: 22px;
     font-weight: lighter;
     padding: 14px;
-    color: rgb(255 , 255 , 255);
-    background-color: rgb(80, 80, 80);
 }
 
 .item {
@@ -26,11 +100,6 @@ a {
     padding-right: 18px;
     font-size: 26px;
     font-weight: lighter;
-    background-color: rgb(80, 80, 80);
-}
-
-.item:hover {
-    background-color: rgb(110, 110, 110);
 }
 
 .item p3{

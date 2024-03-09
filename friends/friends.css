@@ -1,2 +1,46 @@
 @charset "uft-8";
 /* css document */
+
+@media (prefers-color-scheme:light){
+    .friendlink {
+        background-color: gray;
+        color: black;
+    }
+
+    .friendlink:hover {
+        background-color: white;
+        color: gray;
+    }
+}
+
+@media (prefers-color-scheme:dark){
+    .friendlink {
+        background-color: rgb(37,35,44);
+        color: rgb(100,80,130);
+    }
+
+    .friendlink:hover {
+        background-color: rgb(29,27,34);
+        color: rgb(200,170,255);
+    }
+}
+
+@media (prefers-color-scheme:no-preference){
+    .friendlink {
+        background-color: gray;
+        color: black;
+    }
+
+    .friendlink:hover {
+        background-color: white;
+        color: gray;
+    }
+}
+
+
+.friendlink {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
