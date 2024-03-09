@@ -162,11 +162,18 @@ ul {
     padding-bottom: 2em;
 }
 
-.headerimg {
-    background-color: white;
+.headerdiv {
     padding-left: 18vw;
     width: 82vw;
     height: 16vw;
+    overflow: hidden;
+}
+
+.headerimg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
