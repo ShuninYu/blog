@@ -83,7 +83,7 @@
             <!--文章开始-->
             <h1>GithubDesktop找不到VSCode？</h1>
             <div class="borderline"></div>
-            <p1>2024-1-10 - 23:38 | 最后更新：2024-1-10</p1>
+            <p1>2024-1-10 - 23:38 | 最后更新：2024-3-9</p1>
             <div style="width: 100%; overflow: hidden;">
                 <p class="preface intro">
                     因为一些特殊原因（正文会详细说明）导致我有段时间没有更新网站和Blog。今天更新网站内容的时候发现GithubDesktop找不到VSCode，不能直接从软件里打开VSCode编辑项目文件。软件设置里也没有编辑器启动路径，于是简短的解密之旅开始了……
@@ -118,7 +118,7 @@
                     <img src="../../image/p/2024/20240110a/03.png" class="image">
                 </div>
                 <p>我这不是正在用VSCode吗?!而且还是重装系统后重新安装了一遍的VSCode，注册表应该没有缺失才对。</p>
-                <p>怀着疑问我打开了Google，搜索了一下“github desktop can't find vscode”。</p>
+                <p>怀着疑问，我打开了Google，搜索了一下“github desktop can't find vscode”。</p>
                 <div style="text-align: center;">
                     <img src="../../image/p/2024/20240110a/04.png" class="image">
                     <p class="imgtext">直截了当的搜索结果</p>
@@ -128,8 +128,8 @@
                     <img src="../../image/p/2024/20240110a/05.png" class="image">
                     <p class="imgtext">GithubDesktop通过注册表的卸载key来定位VSCode</p>
                 </div>
-                <p>可能因为我本人是个外行所以不懂，难道在设置里添加一个用户手动选择/输入软件路径就行不通？为什么是通过卸载key来定位软件位置？对于这么做的理由和必要性，我百思不得其解……但是毕竟已经给出了原理，那就开始对症下药。</p>
-                <p>按照这个回答的说法，要么是安装VSCode的时候没有生成这个注册表key，要么就是生成的和应该有的（或者GithubDesktop能识别的）key有区别。那这个uninstall key肯定是指VSCode的key，那么我就翻到了HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\<br/>发现uninstall key是“正常”存在的。</p>
+                <p>可能因为我本人是个外行所以不懂，难道在设置里添加一个用户手动选择/输入的软件路径就行不通？为什么是通过卸载key来定位软件位置？对于这么做的必要性和理由，我百思不得其解……但是毕竟已经给出了原理，那就开始对症下药。</p>
+                <p>按照这个回答的说法，要么是安装VSCode的时候没有生成这个注册表key，要么就是生成的和应该有的（或者GithubDesktop能识别的）key有区别。那这个uninstall key肯定是指VSCode的key，于是我就翻到了HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\<br/>发现uninstall key是“正常”存在的。</p>
                 <div style="text-align: center;">
                     <img src="../../image/p/2024/20240110a/06.png" class="image">
                     <p class="imgtext">你不就搁这呢吗？</p>

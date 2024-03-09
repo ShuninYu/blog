@@ -67,6 +67,26 @@ p4 {
     font-family: 'Consolas';
 }
 
+.preface {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+.intro {
+    background-color: rgb(80 , 80 , 80);
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+}
+
+.borderline {
+    width:100%;
+    height: 2px;
+    background-color:rgb(177, 177, 177);
+}
+
 .imgbox {
     text-align: center;
 }
