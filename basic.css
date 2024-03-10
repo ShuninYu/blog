@@ -80,57 +80,57 @@
 @media (prefers-color-scheme:dark){
     /* 当系统是使用深色模式 */
     body{
-        background-color: rgb(42 , 41 , 49);
+        background-color: rgb(41, 43, 49);
         color: rgb(200, 200, 200);
     }
 
     footer {
-        color: rgb(88, 76, 110);
+        color: rgb(76, 84, 110);
     }
 
     footer a{
-        color: rgb(92, 78, 109);
+        color: rgb(78, 88, 109);
     }
 
     .leftblanket p2 {
-        color: rgb(200, 170, 255);
+        color: rgb(170, 193, 255);
     }
 
     .leftblanket p3 {
-        color: rgb(100, 80, 130);
+        color: rgb(80, 93, 130);
     }
 
     .leftheader .leftblanket {
-        background-color: rgb(37, 35, 44);
+        background-color: rgb(35, 37, 44);
     }
 
     .leftbutton {
-        color: rgb(100, 80, 130);
-        background-color: rgb(37, 35, 44);
+        color: rgb(80, 93, 130);
+        background-color: rgb(35, 37, 44);
     }
 
     .leftbutton:hover {
-        color: rgb(200, 170, 255);
-        background-color: rgb(29, 27, 34);
+        color: rgb(170, 190, 255);
+        background-color: rgb(27, 29, 34);
     }
     
     .rightheader .rightblanket {
-        color: rgb(200, 170, 255);
-        background-color: rgb(37, 35, 44);
+        color: rgb(170, 190, 255);
+        background-color: rgb(35, 37, 44);
     }
 
     .rightbutton {
-        color: rgb(100, 80, 130);
-        background-color: rgb(37, 35, 44);
+        color: rgb(80, 93, 130);
+        background-color: rgb(35, 37, 44);
     }
 
     .rightbutton:hover {
-        color: rgb(200, 170, 255);
-        background-color: rgb(29, 27, 34);
+        color: rgb(170, 190, 255);
+        background-color: rgb(27, 29, 34);
     }
 
     .line {
-        background-color: rgb(100, 80, 130);
+        background-color: rgb(80, 93, 130);
     }
 }
 

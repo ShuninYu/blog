@@ -40,19 +40,19 @@
     }
 
     .latest {
-        color: rgb(74, 65, 90);
+        color: rgb(65, 73, 90);
     }
 
     .homelatest {
-        background-color: rgb(37 , 35 , 44);
+        background-color: rgb(35, 38, 44);
     }
 
     .homelatest:hover {
-        background-color: rgb(29, 27, 34);
+        background-color: rgb(27, 29, 34);
     }
 
     .homeicon {
-        border: solid 8px rgb(37, 35, 44);
+        border: solid 8px rgb(35, 37, 44);
         filter: brightness(80%);
     }
 }

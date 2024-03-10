@@ -31,23 +31,23 @@
 
     .select {
         color: rgb(200 , 200 , 200);
-        background-color: rgb(37, 35, 44);
+        background-color: rgb(35, 38, 44);
     }
 
     .select:hover {
-        background-color: rgb(33, 31, 40);
+        background-color: rgb(31, 34, 40);
     }
 
     option:hover {
-        background-color: rgb(18, 56, 56);
+        background-color: rgb(18, 30, 56);
     }
 
     .item {
-        background-color: rgb(37, 35, 44);
+        background-color: rgb(35, 37, 44);
     }
 
     .item:hover {
-        background-color: rgb(33, 31, 40);
+        background-color: rgb(31, 33, 40);
     }
 }
 

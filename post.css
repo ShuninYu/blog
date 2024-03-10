@@ -47,7 +47,7 @@ code {
 
 @media (prefers-color-scheme:dark){
     .intro {
-        background-color: rgb(37 , 35 , 44);
+        background-color: rgb(35, 37, 44);
     }
 
     .headerimg {
@@ -63,23 +63,23 @@ code {
     }
 
     .sidetitle {
-        color: rgb(200, 170, 255);
+        color: rgb(170, 193, 255);
     }
 
     .disqus {
-        background-color: rgb(42 , 41 , 49);
-        border: solid 20px rgb(42 , 41 , 49);
+        background-color: rgb(41, 43, 49);
+        border: solid 20px rgb(41, 43, 49);
         border-radius: 20px;
         box-shadow: 0 0 0 10px rgb(177, 177, 177);
     }
 
     .tag {
-        color: rgb(200, 170, 255);
-        background-color: rgb(32, 31, 36);
+        color: rgb(170, 200, 255);
+        background-color: rgb(30, 31, 39);
     }
 
     .tag:hover {
-        background-color: rgb(30, 29, 32);
+        background-color: rgb(23, 26, 34);
     }
 }
 
