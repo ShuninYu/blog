@@ -67,19 +67,19 @@ code {
     }
 
     .disqus {
-        background-color: rgb(41, 43, 49);
-        border: solid 20px rgb(41, 43, 49);
+        background-color: rgb(26, 27, 31);
+        border: solid 20px rgb(26, 27, 31);
         border-radius: 20px;
         box-shadow: 0 0 0 10px rgb(177, 177, 177);
     }
 
     .tag {
         color: rgb(170, 200, 255);
-        background-color: rgb(30, 31, 39);
+        background-color: rgb(38, 40, 48);
     }
 
     .tag:hover {
-        background-color: rgb(23, 26, 34);
+        background-color: rgb(15, 16, 20);
     }
 }
 

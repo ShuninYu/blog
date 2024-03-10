@@ -80,7 +80,7 @@
 @media (prefers-color-scheme:dark){
     /* 当系统是使用深色模式 */
     body{
-        background-color: rgb(41, 43, 49);
+        background-color: rgb(26, 27, 31);
         color: rgb(200, 200, 200);
     }
 
@@ -101,12 +101,12 @@
     }
 
     .leftheader .leftblanket {
-        background-color: rgb(35, 37, 44);
+        background-color: rgb(22, 23, 26);
     }
 
     .leftbutton {
         color: rgb(80, 93, 130);
-        background-color: rgb(35, 37, 44);
+        background-color: rgb(22, 23, 26);
     }
 
     .leftbutton:hover {
@@ -116,12 +116,12 @@
     
     .rightheader .rightblanket {
         color: rgb(170, 190, 255);
-        background-color: rgb(35, 37, 44);
+        background-color: rgb(22, 23, 26);
     }
 
     .rightbutton {
         color: rgb(80, 93, 130);
-        background-color: rgb(35, 37, 44);
+        background-color: rgb(22, 23, 26);
     }
 
     .rightbutton:hover {
