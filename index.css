@@ -44,7 +44,7 @@
     }
 
     .homelatest {
-        background-color: rgb(35, 38, 44);
+        background-color: rgb(35, 37, 44);
     }
 
     .homelatest:hover {
@@ -52,7 +52,7 @@
     }
 
     .homeicon {
-        border: solid 8px rgb(35, 37, 44);
+        border: solid 8px rgb(65, 73, 90);
         filter: brightness(80%);
     }
 }
