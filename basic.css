@@ -100,6 +100,10 @@
     ::-webkit-scrollbar-thumb:active {
         background-color: rgb(150 , 150 , 150);
     }
+
+    .rss {
+        background-image: url("image/RSS_light.svg");
+    }
 }
 
 @media (prefers-color-scheme:dark){
@@ -182,6 +186,10 @@
     ::-webkit-scrollbar-thumb:active {
         background-color: rgb(25, 26, 31);
     }
+
+    .rss {
+        background-image: url("image/RSS_dark.svg");
+    }
 }
 
 @media (prefers-color-scheme:no-preference){
@@ -263,6 +271,10 @@
     
     ::-webkit-scrollbar-thumb:active {
         background-color: rgb(150 , 150 , 150);
+    }
+
+    .rss {
+        background-image: url("image/RSS_light.svg");
     }
 }
 
@@ -511,4 +523,19 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
     border-radius: 6px;
+}
+
+.rss {
+    height: 4vw;
+    margin-left: 3vw;
+    padding-top: 0.6vw;
+    padding-left: 1vw;
+    font-size: 0.7vw;
+    background-repeat: no-repeat;
+    background-size: 3vw;
+    background-position: left;
+}
+
+.rss p {
+    font-size: 0.9vw;
 }
