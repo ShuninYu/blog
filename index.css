@@ -48,7 +48,7 @@
     }
 
     .homelatest:hover {
-        background-color: rgb(27, 29, 34);
+        background-color: rgb(42, 45, 53);
     }
 
     .homeicon {
@@ -98,7 +98,7 @@
 }
 
 .homecover:hover {
-    background-color: rgba(0 , 0 , 0 , 0.1);
+    background-color: rgba(100, 100, 160, 0.1);
     cursor: pointer;
     transition: 0.5s;
 }
