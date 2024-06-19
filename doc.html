@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--文件命名使用 年月日+字母 方便分类归档，例：20220701a.html-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>参考文档 | 孤灯的Blog</title><!--补充网页标题 把title改成文章标题-->
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="basic.css">
+        <link rel="stylesheet" type="text/css" href="post.css">
+        <link rel="stylesheet" href="highlight/styles/monokai.min.css">
+        <script src="basic.js" type="text/javascrip"></script>
+        <script src="highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <style>
+            h2 {
+                padding: unset;
+                margin-top: 60px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = "gotop" alt="gotop"></div>
+        <script>
+            window.addEventListener("scroll",handle)
+
+            function handle(){
+                var oTop = document.body.scrollTop||document.documentElement.scrollTop
+                if(oTop>=80){
+                    gotop.style.display = "block";
+                }else{
+                    gotop.style.display = "none";
+                }
+
+                gotop.onclick = function(){
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth"
+                    })
+                }
+            }
+        </script>
+        <div class="rightheader">
+            <div class="rightblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <p class="sidetitle">页内导航</p2>
+                </div>
+                <div style="height: 1vh;"></div>
+                <button class="rightbutton" onclick="location.href='#1'">段落标题
+                <button class="rightbutton" onclick="location.href='#2'">代码
+                <button class="rightbutton" onclick="location.href='#3'">文字超链接
+                <button class="rightbutton" onclick="location.href='#4'">普通图片
+                <button class="rightbutton" onclick="location.href='#5'">像素图片
+                <button class="rightbutton" onclick="location.href='#6'">划掉的文字
+                <button class="rightbutton" onclick="location.href='#7'">黑幕文字
+                <button class="rightbutton" onclick="location.href='#8'">备注文字（p.s.）</button>
+            </div>
+        </div>
+        <div class="rightheadershadow"></div>
+        <!--页面基础结构完成，从这之后开始增加页面内容-->
+        <div style="padding-left: 5vw; width: 60vw;"><!--博文div-->
+            <div style="width: 100%; height:80px;"></div><!--顶部空间-->
+            <!--文章开始-->
+            <h1>blog编写格式参考文档</h1><!--文章标题-->
+            <div class="borderline"></div><!--分界线，用来替代不好自定义的<hr>分行线-->
+            <p1>2024-6-20 - 4:30 | 最后更新：年-月-日</p1><!--文章日期，纯数字，例如：2000-7-1 23:00-->
+            <div style="width: 100%; overflow: hidden;"><!--前言框-->
+                <p class="preface intro">
+                    <!--此处填前言-->
+                    为了方便我编写blog，特意编写了这个用于本地的参考文档页面。<br>
+                    因为blog都是纯手敲html页面，所以使用空白模板以后想要添加特殊内容时就会比较麻烦。<br>
+                    使用ctrl + f 搜索需要的内容，或者使用右侧导航栏快速跳到需要的部分。<br>
+                    由于主要是用于本地的文档，所以本页面不带有左侧的网站导航。
+                </p>
+            </div>
+            <!--正文开始-->
+            <!--使用 '&lt;' 来代替正文中的 '<'（左尖括号）-->
+            <div>
+                <h2 id="1">段落标题</h2>
+                <div class="borderline"></div>
+<div>
+    <pre>
+        <code>&lth2 id="">&lt/h2></code>
+</pre>
+</div>
+<p class="intro">
+    在id项的双括号内填写右侧导航按钮识别用的id，要与导航栏button元素内的location.href项井号后内容相同。<br>
+    在h2元素内填写标题内容，要与导航栏button元素内文字相同。
+</p>
+                <h2 id="2">代码</h2>
+                <div class="borderline"></div>
+                    <div>
+                        <pre>
+                            <code>&lt;div>
+    &lt;pre>
+        &lt;code>代码内容第一行
+代码内容中间行
+代码最后一行&lt;/code>
+&lt;/pre>
+&lt;/div></code>
+</pre>
+                    </div>
+                    <p class="intro">
+                        新建一行粘贴后撤销一步！因为VSCode会自动添加缩进导致缩进显示错误。<br>
+                        使用 &amp;lt; 来代替代码以及正文中的 &lt;<br>
+                        使用 &amp;amp; 来代替转义字符中的 &<br>
+                        代码不能对齐html格式的缩进，否则会显示出错。<br>
+                        首行必须在code标签后面，末行必须在/code标签前面，代码每一行都必须按代码实际内容缩进。<br>
+                        最后一个pre标签必须取消缩进，否则代码块和其他文字的间距会显示错误。（详细看示例）<br>
+                        blog使用jquery，代码段用上面的格式插入，插件会自动识别代码类型。
+                    </p>
+                    
+                    <p style="padding-top: 30px;">示例代码：</p>
+
+                    <div>
+                        <pre>
+                            <code>&lt;div>
+    &lt;pre>
+        &lt;code>using System;
+        namespace HelloWorldApplication
+        {
+            /* 类名为 HelloWorld */
+            class HelloWorld
+            {
+                /* main函数 */
+                static void Main(string[] args)
+                {
+                    /* 我的第一个 C# 程序 */
+                    Console.WriteLine("Hello World!");
+                    Console.ReadKey();
+                }
+            }
+        }&lt;/code>
+&lt;/pre>
+&lt;/div></code>
+</pre>
+                    </div>
+
+                    <p>显示效果</p>
+
+                    <div>
+                        <pre>
+                            <code>using System;
+namespace HelloWorldApplication
+{
+    /* 类名为 HelloWorld */
+    class HelloWorld
+    {
+        /* main函数 */
+        static void Main(string[] args)
+        {
+            /* 我的第一个 C# 程序 */
+            Console.WriteLine("Hello World!");
+            Console.ReadKey();
+        }
+    }
+}</code>
+</pre>
+                    </div>
+
+                <h2 id="3">文字超链接</h2>
+                <div class="borderline"></div>
+                <div>
+                    <pre>
+                        <code>&lt;a rel="noopener noreferrer" target="_blank" class="wordbutton" href="">&lt;/a></code>
+</pre>
+                </div>
+                <p class="intro">
+                    在a标签中间填写作为超链接高亮的文字。<br>
+                    在href项的双括号里填写点击高亮文字后要打开的链接。
+                </p>
+                    <p style="padding-top: 30px;">正文中插入<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://blog.shuninyu.fun/">文字超链接</a>示例。</p>
+
+                <h2 id="4">普通图片</h2>
+                <div class="borderline"></div>
+                <div>
+    <pre>
+        <code>&ltdiv class="imgbox">
+    &ltimg src="">
+    &ltp>&lt/p>
+&lt/div></code>
+</pre>
+</div>
+<p class="intro">
+    插入的图片都是由一个独立的div包裹着并且居中显示的。<br>
+    在img元素的src项内填入图片路径。<br>
+    在p元素内填写图片描述。<br>
+    如果添加的图片没有描述，就把p元素删掉。
+</p>
+                    <div class="imgbox">
+                        <img src="image/duckhead_circle.png">
+                        <p>插入图片以及图片描述示例（不含描述的图片将不会有这行文字）</p>
+                    </div>
+                    
+                <h2 id="5">像素图片</h2>
+                <div class="borderline"></div>
+                <div>
+    <pre>
+        <code>&ltdiv class="imgbox pixel">
+    &ltimg src="" style="width:;">
+    &ltp>&lt/p>
+&lt/div></code>
+</pre>
+</div>
+<p class="intro">
+    在img元素的src项内填入像素图片路径。<br>
+    在img元素的style项内填入像素图片缩放后的尺寸。<br>
+    在p元素内填写图片描述，同样如果没有描述就删除p元素。<br>
+    像素图单独拿出来是因为使用特殊的缩放采样效果可以节省文件体积，让像素图可以使用尺寸最小的原图。
+</p>
+
+                    <div class="imgbox pixel">
+                        <img src="image/KeyBoardKey.png" style="width: 300px;">
+                        <p>像素图效果预览</p>
+                    </div>
+                    
+                <h2 id="6">划掉的文字</h2>
+                <div class="borderline"></div>
+                <div>
+    <pre>
+        <code>&ltdel>&lt/del></code>
+</pre>
+</div>
+<p class="intro">
+    在del元素内填写要被划掉的文字，这个很好理解吧。
+</p>
+
+                    <p>添加<del>划掉的文字</del>的示例</p>
+                    
+                <h2 id="7">黑幕文字</h2>
+                <div class="borderline"></div>
+                <div>
+    <pre>
+        <code>&ltspan class="heimu" title="">&lt/span></code>
+</pre>
+</div>
+<p class="intro">
+    *使用的是萌娘百科版本的文字黑幕。<br>
+    在span元素内填写要被黑幕遮住的文字。<br>
+    在title项内填写指针悬浮在黑幕文字上时，浮现的小窗口内显示的文字。<br>
+    目前我还没有为黑幕文字做暗色模式的适配，所以显示效果会有点融入背景。
+</p>
+
+                    <p>添加<span class="heimu" title="你知道的太多了">被黑幕盖住的文字</span>的示例</p>
+                    
+                <h2 id="8">备注文字（p.s.）</h2>
+                <div class="borderline"></div>
+                <div>
+    <pre>
+        <code>&lt;ps>&lt;/ps></code>
+</pre>
+</div>
+<p class="intro">
+    在ps元素内填入备注文字。<br>
+    对我自己来说，添加备注文字时要新起一行。<br>
+    备注文字可以在正文p元素内直接加入。
+</p>
+
+                    <!--补充文字用<ps></ps>包裹，必须再起一行，不能在行内添加-->
+                    <p>正文内容中间可以插入备注文字。</br><ps>备注文字的示例</ps></br>
+
+
+            </div>
+            <!--正文结束-->
+            <!--文章结束-->
+            <div style="width: 100%; height:80px;"></div><!--底部空间-->
+            <div class="borderline"></div>
+                    <p>还好作为一条懒狗，现在的一切对我来说都完全够用了，而且实现的效果我还挺满意的。</p>
+        </div>
+    </body>
+
+    <footer>
+        <p3>©2021 <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="font-weight: 800; font-family: 'STHei'; text-decoration: none;">ShuninYu</a>. All rights reserved.</br>Theme Closet designed by <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="font-weight: 800; font-family: 'STHei'; text-decoration: none;">ShuninYu</a>.</p3>
+    </footer>
+</html>

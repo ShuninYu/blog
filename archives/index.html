@@ -76,6 +76,7 @@
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
                 <!--页内导航按钮，手动添加-->
+                <button class="rightbutton" onclick="location.href='#2024'">2024 | 甲辰年</button>
                 <button class="rightbutton" onclick="location.href='#2023'">2023 | 癸卯年</button>
                 <button class="rightbutton" onclick="location.href='#2022'">2022 | 壬寅年</button>
             </div>
@@ -104,10 +105,21 @@
         <script>
 			$(function() {
 				//隐藏div
-                //动画tagdonghua 游戏tagyouxi 经验tagjingyan 软件tagruanjian 硬件tagyingjian 杂谈tagzatan
-                //总共7种情况
+                //动画tagdonghua 游戏tagyouxi 经验tagjingyan 软件tagruanjian 硬件tagyingjian 杂谈tagzatan 评测tagpingce
+                //总共8种情况
+                //增加新标签时 先在上面备注添加标签名 再在全隐藏添加hide 全显示里添加show 然后在else if组里添加单独显示的show
 				//给div添加change事件
 				$("#type").change(function() {
+                    //筛选前先全部隐藏
+                    $(".tagdonghua").hide();
+                    $(".tagyouxi").hide();
+                    $(".tagjingyan").hide();
+                    $(".tagruanjian").hide();
+                    $(".tagyingjian").hide();
+                    $(".tagzatan").hide();
+                    $(".tagpingce").hide();
+                    $(".tagqita").hide();
+                    //全显示
 					if($(this).val() == 1) {
 						$(".tagdonghua").show();
 						$(".tagyouxi").show();
@@ -115,53 +127,32 @@
 						$(".tagruanjian").show();
 						$(".tagyingjian").show();
 						$(".tagzatan").show();
+                        $(".tagpingce").show();
+						$(".tagqita").show();
+                    //以下为包含其中一种标签就显示
 					} else if($(this).val() == 2) {
 						$(".tagdonghua").show();
-						$(".tagyouxi").hide();
-						$(".tagjingyan").hide();
-						$(".tagruanjian").hide();
-						$(".tagyingjian").hide();
-						$(".tagzatan").hide();
 					}
 					else if($(this).val() == 3) {
-						$(".tagdonghua").hide();
 						$(".tagyouxi").show();
-						$(".tagjingyan").hide();
-						$(".tagruanjian").hide();
-						$(".tagyingjian").hide();
-						$(".tagzatan").hide();
 					}
 					else if($(this).val() == 4) {
-						$(".tagdonghua").hide();
-						$(".tagyouxi").hide();
 						$(".tagjingyan").show();
-						$(".tagruanjian").hide();
-						$(".tagyingjian").hide();
-						$(".tagzatan").hide();
 					}
 					else if($(this).val() == 5) {
-						$(".tagdonghua").hide();
-						$(".tagyouxi").hide();
-						$(".tagjingyan").hide();
 						$(".tagruanjian").show();
-						$(".tagyingjian").hide();
-						$(".tagzatan").hide();
 					}
 					else if($(this).val() == 6) {
-						$(".tagdonghua").hide();
-						$(".tagyouxi").hide();
-						$(".tagjingyan").hide();
-						$(".tagruanjian").hide();
 						$(".tagyingjian").show();
-						$(".tagzatan").hide();
 					}
 					else if($(this).val() == 7) {
-						$(".tagdonghua").hide();
-						$(".tagyouxi").hide();
-						$(".tagjingyan").hide();
-						$(".tagruanjian").hide();
-						$(".tagyingjian").hide();
 						$(".tagzatan").show();
+					}
+					else if($(this).val() == 8) {
+						$(".tagpingce").show();
+					}
+					else if($(this).val() == 9) {
+						$(".tagqita").show();
 					}
 				})
 			})
@@ -182,6 +173,8 @@
                     <option value="5">软件</option>
                     <option value="6">硬件</option>
                     <option value="7">杂谈</option>
+                    <option value="8">评测</option>
+                    <option value="9">其他</option>
                 </select>
             </div>
             <!-- ↓ 2022年的文章，新增年份就在顶端复制一套改一下-->
@@ -190,7 +183,16 @@
             <div style="width: 100%; overflow: hidden;">
                 <div class="preface">
                     <ul class="list"><!--此处填文章链接-->
+
                         <!--li标签内填上class以分类文章-->
+                        <li class="tagqita">
+                            <a href="../doc">
+                                <div class="item">
+                                    <p>blog参考文档</p>
+                                    <p>2024-6-20</p>
+                                </div>
+                            </a>
+                        </li>
                         <li class="tagjingyan">
                             <a href="/p/2024/20240110a">
                                 <div class="item">
@@ -199,6 +201,7 @@
                                 </div>
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -211,7 +214,8 @@
             <div style="width: 100%; overflow: hidden;">
                 <div class="preface">
                     <ul class="list"><!--此处填文章链接-->
-                        <!--li标签内填上class以分类文章-->
+
+                        <!--li标签内填上class以分类文章 一个文章可以有多个标签-->
                         <li class="tagjingyan">
                             <a href="/p/2022/20220909a">
                                 <div class="item">
@@ -220,6 +224,7 @@
                                 </div>
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
