@@ -348,11 +348,6 @@ p3 {
     text-align: center;
 }
 
-#color-mode:checked ~ .body {
-    /*background:black;*/
-    /*color:white;*/
-}
-
 .top {
     font-size: 36px;
     font-weight: lighter;
