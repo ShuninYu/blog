@@ -134,12 +134,12 @@
     }
 
     .leftbutton {
-        color: rgb(80, 93, 130);
+        color: rgb(170, 190, 255);
         background-color: rgb(22, 23, 26);
     }
 
     .leftbutton:hover {
-        color: rgb(170, 190, 255);
+        color: rgb(211, 220, 255);
         background-color: rgb(27, 29, 34);
     }
     
@@ -149,12 +149,12 @@
     }
 
     .rightbutton {
-        color: rgb(80, 93, 130);
+        color: rgb(170, 190, 255);
         background-color: rgb(22, 23, 26);
     }
 
     .rightbutton:hover {
-        color: rgb(170, 190, 255);
+        color: rgb(211, 220, 255);
         background-color: rgb(27, 29, 34);
     }
 
