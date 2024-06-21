@@ -176,15 +176,15 @@
     /*定义滑块 内阴影+圆角*/
     ::-webkit-scrollbar-thumb {
         -webkit-box-shadow: inset 0 0 6px rgb(15, 15, 15);
-        background-color: rgb(24, 26, 32);
+        background-color: rgb(35, 48, 83);
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background-color: rgb(21, 23, 29);
+        background-color: rgb(40, 53, 90);
     }
     
     ::-webkit-scrollbar-thumb:active {
-        background-color: rgb(25, 26, 31);
+        background-color: rgb(65, 73, 112);
     }
 
     .rss {

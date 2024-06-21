@@ -218,11 +218,11 @@ ul {
     margin: 0;
     color: white;
     text-decoration: none;
-    background-color: rgb(99, 120, 120)/*rgb(0, 1, 58)*/;
+    background-color: rgb(80, 80, 80)/*rgb(0, 1, 58)*/;
 }
 
 .wordbutton:hover {
-    background-color:  rgb(80, 80, 80)/*rgb(0, 31, 97)*/;
+    background-color:  rgb(99, 120, 120)/*rgb(0, 31, 97)*/;
 }
 
 .disqus {
