@@ -51,11 +51,11 @@ code {
     }
 
     .headerimg {
-        filter: brightness(80%);
+        filter: brightness(90%);
     }
 
     .imgbox img {
-        filter: brightness(80%);
+        filter: brightness(90%);
     }
 
     .imgbox p{

@@ -53,7 +53,8 @@
                 <button class="rightbutton" onclick="location.href='#5'">像素图片
                 <button class="rightbutton" onclick="location.href='#6'">划掉的文字
                 <button class="rightbutton" onclick="location.href='#7'">黑幕文字
-                <button class="rightbutton" onclick="location.href='#8'">备注文字（p.s.）</button>
+                <button class="rightbutton" onclick="location.href='#8'">备注文字（p.s.）
+                <button class="rightbutton" onclick="location.href='#9'">补充文字</button>
             </div>
         </div>
         <div class="rightheadershadow"></div>
@@ -258,6 +259,17 @@ namespace HelloWorldApplication
 
                     <!--补充文字用<ps></ps>包裹，必须再起一行，不能在行内添加-->
                     <p>正文内容中间可以插入备注文字。</br><ps>备注文字的示例</ps></br>
+
+                <h2 id="9">补充文字</h2>
+                <div class="borderline"></div>
+                <div>
+    <pre>
+        <code>&lt;p class="intro"></code>
+</pre>
+</div>
+<p class="intro">
+    在正文中添加和文章简介一样的文字框。<br>在两个&lt;p>标签中间插入文字。<br>因为VSCode会自己补充后面的&lt;/p>所以这里只给前半部分来复制。
+</p>
 
 
             </div>
