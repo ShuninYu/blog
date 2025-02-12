@@ -1,10 +1,5 @@
 @charset "uft-8";
 /* css document */
-@font-face
-{
-	font-family: Song;
-	src: url('./fonts/STSong.ttf');
-}
 
 @font-face
 {
@@ -16,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'LXGW WenKai';font-weight:'400';
     /*font-family: 'Song';*/
 }
 
@@ -320,8 +316,7 @@ a {
     font-weight: normal;
 }
 
-p2 {
-    font-family: 'Song';
+p2 {font-family:'LXGW WenKai';font-weight:'400';
     text-align:center;
     font-weight: bold;
     line-height: 1.2em;
@@ -331,8 +326,7 @@ p2 {
     line-height: 1.2em;
 }
 
-p3 {
-    font-family: 'Song';
+p3 {font-family:'LXGW WenKai';font-weight:'400';
     text-align:center;
     font-weight: bold;
     line-height: 1.2em;
