@@ -20,4 +20,13 @@
     }
     
     head.appendChild(link);
+
+    // 添加调试信息
+    console.log('[Debug] 正在尝试插入CSS:', cssUrl);
+    link.onload = function() {
+        console.log('[Debug] CSS加载成功:', cssUrl);
+    };
+    link.onerror = function() {
+        console.error('[Debug] CSS加载失败:', cssUrl);
+    };
 })();
