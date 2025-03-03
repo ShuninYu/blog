@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-
-<channel>
-    <title>孤灯从流-Blog</title>
-    <link>https://blog.shuninyu.fun</link>
-    <description>是以泰山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。</description>
-    <pubDate>Thu, 08 Sep 2022 09:31:00 +0800</pubDate>
-    <generator>孤灯的双手以及VSCode</generator>
-    <copyright>©2022 ShuininYu. All rights reserved.</copyright>
-    <image>
-    <url>https://blog.shuninyu.fun/icon/Beeduckven.jpg</url>
-    <title>孤灯从流-Blog</title>
-    <link>https://blog.shuninyu.fun</link>
-    </image>
-
-    <item>
-        <title>Blog参考文档</title>
-        <link>https://blog.shuninyu.fun/doc</link>
-        <guid>https://blog.shuninyu.fun/doc</guid>
-        <pubDate>Thu, 20 Jun 2024 06:53:10 CST</pubDate>
-        <description>编写我的blog时使用的参考文档</description>
-    </item>
-
-    <item>
-        <title>GithubDesktop找不到VSCode？</title>
-        <link>https://blog.shuninyu.fun/p/2024/20240110a</link>
-        <guid>https://blog.shuninyu.fun/p/2024/20240110a</guid>
-        <pubDate>Wed, 10 Jan 2024 23:38:00 +0800</pubDate>
-        <description>因为一些特殊原因（正文会详细说明）导致我有段时间没有更新网站和Blog。今天更新网站内容的时候发现GithubDesktop找不到VSCode，不能直接从软件里打开VSCode编辑项目文件。软件设置里也没有编辑器启动路径，于是简短的解密之旅开始了……</description>
-    </item>
-
-    <item>
-        <title>不是markdown，而是HTML！</title>
-        <link>https://blog.shuninyu.fun/p/2022/20220909a</link>
-        <guid>https://blog.shuninyu.fun/p/2022/20220909a</guid>
-        <pubDate>Fri, 09 Sep 2022 15:04:00 +0800</pubDate>
-        <description>现在很多人写blog使用的都是markdown语言，通过Jekyll、Hugo之类的静态站点生成器，上传.md文件就可以生成一个静态文章网页，非常的方便。而你现在所看的这篇文章——这个网站的所有页面，都是纯手敲的HTML+CSS+Javascript……</description>
-    </item>
-
-</channel>
+    <channel>
+        <atom:link href="https://blog.shuninyu.fun/rss.xml" rel="self" type="application/rss+xml"/>
+        <image>
+            <url>https://blog.shuninyu.fun/favicon.ico</url>
+            <title>孤灯从流-Blog</title>
+            <link>https://blog.shuninyu.fun</link>
+        </image>
+        <description>是以太山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 08 Sep 2022 09:31:00 +0800</pubDate>
+        <generator>孤灯的双手以及VSCode</generator>
+        <copyright>©2022 ShuininYu. All rights reserved.</copyright>
+        <item>
+            <title>Blog参考文档</title>
+            <link isPermaLink="true">https://blog.shuninyu.fun/doc</link>
+            <guid>https://blog.shuninyu.fun/doc</guid>
+            <pubDate>Thu, 20 Jun 2024 06:53:10 CST</pubDate>
+            <description>编写我的blog时使用的参考文档</description>
+        </item>
+        <item>
+            <title>GithubDesktop找不到VSCode？</title>
+            <link isPermaLink="true">https://blog.shuninyu.fun/p/2024/20240110a</link>
+            <guid>https://blog.shuninyu.fun/p/2024/20240110a</guid>
+            <pubDate>Wed, 10 Jan 2024 23:38:00 +0800</pubDate>
+            <description>因为一些特殊原因（正文会详细说明）导致我有段时间没有更新网站和Blog。今天更新网站内容的时候发现GithubDesktop找不到VSCode，不能直接从软件里打开VSCode编辑项目文件。软件设置里也没有编辑器启动路径，于是简短的解密之旅开始了……</description>
+        </item>
+        <item>
+            <title>不是markdown，而是HTML！</title>
+            <link isPermaLink="true">https://blog.shuninyu.fun/p/2022/20220909a</link>
+            <guid>https://blog.shuninyu.fun/p/2022/20220909a</guid>
+            <pubDate>Fri, 09 Sep 2022 15:04:00 +0800</pubDate>
+            <description>现在很多人写blog使用的都是markdown语言，通过Jekyll、Hugo之类的静态站点生成器，上传.md文件就可以生成一个静态文章网页，非常的方便。而你现在所看的这篇文章——这个网站的所有页面，都是纯手敲的HTML+CSS+Javascript……</description>
+        </item>
+    </channel>
 </rss>
