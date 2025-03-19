@@ -297,16 +297,6 @@ p4 {
     font-weight: normal;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 40vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 .navigatag {
     margin-left: 1vw;
     margin-right: 1vw;

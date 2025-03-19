@@ -522,3 +522,13 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
 .rss p {
     font-size: 0.9vw;
 }
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
