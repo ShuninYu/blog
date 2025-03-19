@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <title>模板 | 孤灯的Blog</title><!--补充网页title-->
         <link rel="icon" href="../../../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../../../basic.css">
-        <link rel="stylesheet" type="text/css" href="../../../post.css">
+        <link rel="stylesheet" href="../../../basic.css">
+        <link rel="stylesheet" href="../../../post.css">
         <link rel="stylesheet" href="../../../highlight/styles/monokai.min.css">
-        <script src="../../../basic.js" type="text/javascrip"></script>
+        <script src="../../../basic.js"></script>
         <script src="../../../highlight/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
@@ -40,10 +40,12 @@
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
                 <!--页内导航按钮，手动添加-->
-                <button class="rightbutton" onclick="location.href='#h2-1'">第一个二级标题
-                <button class="rightbutton" onclick="location.href='#h2-2'">第二个二级标题
-                <button class="rightbutton" onclick="location.href='#h2-3'">第三个二级标题
-                <button class="rightbutton" onclick="location.href='#h2-4'">第四个二级标题</button>
+                <div class="navigation">
+                    <button class="rightbutton" onclick="location.href='#h2-1'">第一个二级标题
+                    <button class="rightbutton" onclick="location.href='#h2-2'">第二个二级标题
+                    <button class="rightbutton" onclick="location.href='#h2-3'">第三个二级标题
+                    <button class="rightbutton" onclick="location.href='#h2-4'">第四个二级标题</button>
+                </div>
                 <div style="overflow: hidden; padding-top: 3vh;">
                     <div class="line"></div>
                     <div style="height: 1vh;"></div>
@@ -64,25 +66,6 @@
         </div>
         <div class="rightheadershadow"></div>
         <div id = "gotop" alt="gotop"></div>
-        <script>
-            window.addEventListener("scroll",handle)
-
-            function handle(){
-                var oTop = document.body.scrollTop||document.documentElement.scrollTop
-                if(oTop>=80){
-                    gotop.style.display = "block";
-                }else{
-                    gotop.style.display = "none";
-                }
-
-                gotop.onclick = function(){
-                    window.scrollTo({
-                        top:0,
-                        behavior:"smooth"
-                    })
-                }
-            }
-        </script>
         <!--页面基础结构完成，从这之后开始增加页面内容-->
         <div class="headerimg">
             <!--文章顶部图片，自带50%灰度滤镜，建议长宽比4:1，超过长度部分会被裁切，右侧和底部4px会被遮挡一小部分所以稍微留白-->
@@ -102,7 +85,6 @@
                     因为网站是纯手敲的，所以能做出这个模板我还是挺满意的。
                 </p>
             </div>
-            <div style="height: 40px;"></div>
             <!--正文开始-->
             <div>
                 <h2 id="h2-1">第一个二级标题</h2>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>赛博药方 | 孤灯的Blog</title>
+        <link rel="icon" href="../../../favicon.ico">
+        <link rel="stylesheet" href="../../../basic.css">
+        <link rel="stylesheet" href="../../../post.css">
+        <link rel="stylesheet" href="../../../highlight/styles/monokai.min.css">
+        <script src="../../../basic.js"></script>
+        <script src="../../../highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body>
+        <div class="leftheader">
+            <div class="leftblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <p2>孤灯从流</br>的博客</br></p2>
+                    <p3>ShuninYu 's Blog</p3>
+                </div>
+                <div style="height: 5vh;"></div>
+                <button class="leftbutton" onclick="location.href='/'">主页
+                <button class="leftbutton" onclick="location.href='/archives'">归档
+                <button class="leftbutton" onclick="location.href='/about'">关于
+                <button class="leftbutton" onclick="location.href='/friends'">友链
+                <button class="leftbutton" onclick="location.href='https://www.shuninyu.fun'">主站</button>
+                <button class="leftbutton" onclick="location.href='https://blog.shuninyu.fun/rss.xml'"><div class="rss"><p>通过RSS订阅</p><br/>Subscribe via RSS</div></button>
+            </div>
+        </div>
+        <div class="leftheadershadow"></div>
+        <div class="rightheader">
+            <div class="rightblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <div class="line"></div>
+                    <p class="sidetitle">页内导航</p2>
+                </div>
+                <div class="line"></div>
+                <div style="height: 1vh;"></div>
+                <div class="navigation">
+                    <button class="rightbutton" onclick="location.href='#硬件类'">硬件类
+                    <button class="rightbutton" onclick="location.href='#软件类'">软件类
+                    <button class="rightbutton" onclick="location.href='#特别情况Q&A'">特别情况Q&A</button>
+                </div>
+                <div style="overflow: hidden; padding-top: 3vh;">
+                    <div class="line"></div>
+                    <p class="sidetitle">Tags</p2>
+                </div>
+                <div class="line"></div>
+                <div style="height: 1vh;"></div>
+                    <p3 class="tag main">#类别标签</p3><br>
+                    <p3 class="tag">#次要标签1</p3><br>
+                    <p3 class="tag">#次要标签2</p3>
+            </div>
+        </div>
+        <div class="rightheadershadow"></div>
+        <div id = "gotop" alt="gotop"></div>
+        <div class="article">
+            <div style="width: 100%; height:80px;"></div>
+            <!--文章开始-->
+            <h1>赛博药方——疑难杂症解决方案合集（持续更新）</h1>
+            <div class="borderline"></div>
+            <p1>2025年3月19日 - 15:11 | 最后更新：年-月-日</p1>
+            <div style="width: 100%; overflow: hidden;">
+                <p class="preface intro">
+                    此处收集一些各类软硬件的疑难杂症解决方案，方便日后查阅。
+                </p>
+            </div>
+            <!--正文开始-->
+            <div>
+                <h2 id="硬件类">硬件类</h2>
+                <div class="folder folding">
+                    <button class="foldButton">
+                        <div class="triangle"><p2>▶</p2><h1>台式机前面板耳机孔有杂音</h1></div>
+                    </button>
+                    <div class="foldcontent">
+                        <p>打开背板检查走线，调整前面板的音频口线和CPU供电线的位置，让两者尽量远离。</p>
+                    </div>
+                </div>
+                <div class="folder folding">
+                    <button class="foldButton">
+                        <div class="triangle"><p2>▶</p2><h1>GPW一代板载灯效异常</h1></div>
+                    </button>
+                    <div class="foldcontent">
+                        <div class="intro">
+                            <p>问题的现象是板载模式情况下，在GPW接收器插拔/鼠标线插拔等鼠标重新连接电脑的时候，GPW的RGB灯直接熄灭或者显示错误，板载设置失效。</p>
+                            <p>这个问题主要是Windows11动态光效的问题，即使在系统设置里关闭了动态光效，这个问题仍然会出现。</p>
+                        </div>
+                        <p>首先打开服务</p>
+                        <div class="intro">
+                            <p>方式一：<br>快捷键Win + R打开运行窗口，输入services.msc，回车。</p>
+                            <div class="imgbox">
+                                <img src="../../../image/p/top/problems/01.png">
+                            </div>
+                            <p>方式二：<br>1、打开任务管理器，选择Windows工具。</p>
+                            <div class="imgbox">
+                                <img src="../../../image/p/top/problems/02.png">
+                            </div>
+                            <p>2、在Windows工具窗口中选择 服务。</p>
+                            <div class="imgbox">
+                                <img src="../../../image/p/top/problems/03.png">
+                            </div>
+                        </div>
+                        <p>打开服务后，快捷键Ctrl + F 打开搜索框，输入LampArray查找Logitech LampArray Service服务，双击或者右键菜单打开属性。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/04.png">
+                        </div>
+                        <p>把启动类型改为禁用，如果服务正在运行点击停止来关闭服务。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/05.png">
+                        </div>
+                        <p>设置好板载设置后重新插拔GPW，问题解决。</p>
+                    </div>
+                </div>
+
+                <h2 id="软件类">软件类</h2>   
+                <div class="folder folding">
+                    <button class="foldButton">
+                        <div class="triangle"><p2>▶</p2><h1>Github Desktop找不到VSCode</h1></div>
+                    </button>
+                    <div class="foldcontent">
+                        <p>具体解决办法查看<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://blog.shuninyu.fun/p/2024/20240110a/">这篇文章</a></p>
+                    </div>
+                </div>
+
+                <h2 id="特别情况Q&A">特别情况Q&A</h2>
+                <div class="folder folding">
+                    <button class="foldButton">
+                        <div class="triangle"><p2>▶</p2><h1>intel平台更换到AMD平台是否需要重装系统？</h1></div>
+                    </button>
+                    <div class="foldcontent">
+                        <p>此回答基于Windows11 23H2版本，硬件由14900K Z790更换到9950X B850。<br>不需要，直接更换硬件即可。<br>但是需要注意，更换CPU以后系统可能需要重新激活，并且需要安装新主板所需要的各类驱动。</p>
+                    </div>
+            </div>
+            <!--正文结束-->
+            <!--文章结束-->
+        </div>
+    <footer>
+        <p3>©2021 <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="font-weight: 800; text-decoration: none;">ShuninYu</a>. All rights reserved.</br>Theme Closet designed by <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="font-weight: 800; text-decoration: none;">ShuninYu</a>.</p3>
+    </footer>
+</html>

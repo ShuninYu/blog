@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <title>title | 孤灯的Blog</title>
         <link rel="icon" href="../../../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../../../basic.css">
-        <link rel="stylesheet" type="text/css" href="../../../post.css">
+        <link rel="stylesheet" href="../../../basic.css">
+        <link rel="stylesheet" href="../../../post.css">
         <link rel="stylesheet" href="../../../highlight/styles/monokai.min.css">
-        <script src="../../../basic.js" type="text/javascrip"></script>
+        <script src="../../../basic.js"></script>
         <script src="../../../highlight/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
@@ -37,43 +37,27 @@
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
-                <button class="rightbutton" onclick="location.href='#第一段标题'">第一段标题
-                <button class="rightbutton" onclick="location.href='#第二段标题'">第二段标题</button>
+                <div class="navigation">
+                    <div class="navigation">
+                        <button class="rightbutton" onclick="location.href='#第一段标题'">第一段标题
+                        <button class="rightbutton" onclick="location.href='#第二段标题'">第二段标题</button>
+                    </div>
+                </div>
                 <div style="overflow: hidden; padding-top: 3vh;">
                     <div class="line"></div>
                     <p class="sidetitle">Tags</p2>
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
-                <div style="padding-left: 1vh;padding-right:1vh;">
+                <div class="navigatag">
                     <p3 class="tag main">#类别标签</p3><br>
                     <p3 class="tag">#次要标签1</p3><br>
-                    <p3 class="tag">#次要标签2</p3><br>
-                    <p3 class="tag">#次要标签3</p3>
+                    <p3 class="tag">#次要标签2</p3>
                 </div>
             </div>
         </div>
         <div class="rightheadershadow"></div>
         <div id = "gotop" alt="gotop"></div>
-        <script>
-            window.addEventListener("scroll",handle)
-
-            function handle(){
-                var oTop = document.body.scrollTop||document.documentElement.scrollTop
-                if(oTop>=80){
-                    gotop.style.display = "block";
-                }else{
-                    gotop.style.display = "none";
-                }
-
-                gotop.onclick = function(){
-                    window.scrollTo({
-                        top:0,
-                        behavior:"smooth"
-                    })
-                }
-            }
-        </script>
         <div class="headerdiv">
             <div class="headerimg" style="background-image: url(../../../image/p/basic/00.png);"></div>
         </div>
@@ -85,10 +69,9 @@
             <p1>年-月-日 - 时:分 | 最后更新：年-月-日</p1>
             <div style="width: 100%; overflow: hidden;">
                 <p class="preface intro">
-                    <!--此处填前言-->
+                    //此处填前言
                 </p>
             </div>
-            <div style="height: 40px;"></div>
             <!--正文开始-->
             <div>
                 <h2 id="第一段标题">第一段标题</h2>

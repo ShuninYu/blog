@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <title>不是markdown，而是HTML！ | 孤灯的Blog</title><!--补充网页title-->
         <link rel="icon" href="../../../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../../../basic.css">
-        <link rel="stylesheet" type="text/css" href="../../../post.css">
+        <link rel="stylesheet" href="../../../basic.css">
+        <link rel="stylesheet" href="../../../post.css">
         <link rel="stylesheet" href="../../../highlight/styles/monokai.min.css">
-        <script src="../../../basic.js" type="text/javascrip"></script>
+        <script src="../../../basic.js"></script>
         <script src="../../../highlight/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
@@ -39,10 +39,12 @@
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
                 <!--页内导航按钮，手动添加-->
-                <button class="rightbutton" onclick="location.href='#别人是怎么做的'">别人是怎么做的
-                <button class="rightbutton" onclick="location.href='#我是怎么开始的'">我是怎么开始的
-                <button class="rightbutton" onclick="location.href='#还是HTML'">还是HTML
-                <button class="rightbutton" onclick="location.href='#我是怎么做的'">我是怎么做的</button>
+                <div class="navigation">
+                    <button class="rightbutton" onclick="location.href='#别人是怎么做的'">别人是怎么做的
+                    <button class="rightbutton" onclick="location.href='#我是怎么开始的'">我是怎么开始的
+                    <button class="rightbutton" onclick="location.href='#还是HTML'">还是HTML
+                    <button class="rightbutton" onclick="location.href='#我是怎么做的'">我是怎么做的</button>
+                </div>
                 <div style="overflow: hidden; padding-top: 3vh;">
                     <div class="line"></div>
                     <p class="sidetitle">Tags</p2>
@@ -60,25 +62,6 @@
         </div>
         <div class="rightheadershadow"></div>
         <div id = "gotop" alt="gotop"></div>
-        <script>
-            window.addEventListener("scroll",handle)
-
-            function handle(){
-                var oTop = document.body.scrollTop||document.documentElement.scrollTop
-                if(oTop>=80){
-                    gotop.style.display = "block";
-                }else{
-                    gotop.style.display = "none";
-                }
-
-                gotop.onclick = function(){
-                    window.scrollTo({
-                        top:0,
-                        behavior:"smooth"
-                    })
-                }
-            }
-        </script>
         <!--页面基础结构完成，从这之后开始增加页面内容-->
         <div class="headerdiv">
             <!--文章顶部图片，自带50%灰度滤镜，建议长宽比4:1，超过长度部分会被裁切，右侧和底部4px会被遮挡一小部分所以稍微留白-->
@@ -97,7 +80,6 @@
                     现在很多人写blog使用的都是markdown语言，通过Jekyll、Hugo之类的静态站点生成器，上传.md文件就可以生成一个静态文章网页，非常的方便。而你现在所看的这篇文章，也是通过.md文件自动生成的文章页面——才怪！</br>这个网站的所有页面，都是纯手敲的HTML+CSS+Javascript……
                 </p>
             </div>
-            <div style="height: 40px;"></div>
             <!--正文开始-->
             <!--使用 '&lt;' 来代替正文中的 '<'（左尖括号）-->
             <div>

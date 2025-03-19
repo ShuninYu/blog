@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<!--文件命名使用 年月日+字母 方便分类归档，例：20220701a.html-->
 <html>
     <head>
         <meta charset="utf-8">
         <title>参考文档 | 孤灯的Blog</title><!--补充网页标题 把title改成文章标题-->
         <link rel="icon" href="../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../basic.css">
-        <link rel="stylesheet" type="text/css" href="../post.css">
+        <link rel="stylesheet" href="../basic.css">
+        <link rel="stylesheet" href="../post.css">
         <link rel="stylesheet" href="../highlight/styles/monokai.min.css">
-        <script src="../basic.js" type="text/javascrip"></script>
+        <script src="../basic.js"></script>
         <script src="../highlight/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <style>
@@ -21,40 +20,24 @@
 
     <body>
         <div id = "gotop" alt="gotop"></div>
-        <script>
-            window.addEventListener("scroll",handle)
-
-            function handle(){
-                var oTop = document.body.scrollTop||document.documentElement.scrollTop
-                if(oTop>=80){
-                    gotop.style.display = "block";
-                }else{
-                    gotop.style.display = "none";
-                }
-
-                gotop.onclick = function(){
-                    window.scrollTo({
-                        top:0,
-                        behavior:"smooth"
-                    })
-                }
-            }
-        </script>
         <div class="rightheader">
             <div class="rightblanket">
                 <div style="overflow: hidden; padding-top: 5vh;">
                     <p class="sidetitle">页内导航</p2>
                 </div>
                 <div style="height: 1vh;"></div>
-                <button class="rightbutton" onclick="location.href='#1'">段落标题
-                <button class="rightbutton" onclick="location.href='#2'">代码
-                <button class="rightbutton" onclick="location.href='#3'">文字超链接
-                <button class="rightbutton" onclick="location.href='#4'">普通图片
-                <button class="rightbutton" onclick="location.href='#5'">像素图片
-                <button class="rightbutton" onclick="location.href='#6'">划掉的文字
-                <button class="rightbutton" onclick="location.href='#7'">黑幕文字
-                <button class="rightbutton" onclick="location.href='#8'">备注文字（p.s.）
-                <button class="rightbutton" onclick="location.href='#9'">补充文字</button>
+                <div class="navigation" style="height: 80vh;">
+                    <button class="rightbutton" onclick="location.href='#1'">段落标题
+                    <button class="rightbutton" onclick="location.href='#2'">代码
+                    <button class="rightbutton" onclick="location.href='#3'">文字超链接
+                    <button class="rightbutton" onclick="location.href='#4'">普通图片
+                    <button class="rightbutton" onclick="location.href='#5'">像素图片
+                    <button class="rightbutton" onclick="location.href='#6'">划掉的文字
+                    <button class="rightbutton" onclick="location.href='#7'">黑幕文字
+                    <button class="rightbutton" onclick="location.href='#8'">备注文字（p.s.）
+                    <button class="rightbutton" onclick="location.href='#9'">补充文字
+                    <button class="rightbutton" onclick="location.href='#10'">折叠窗口</button>
+                </div>
             </div>
         </div>
         <div class="rightheadershadow"></div>
@@ -102,7 +85,7 @@
 </pre>
                     </div>
                     <p class="intro">
-                        新建一行粘贴后撤销一步！因为VSCode会自动添加缩进导致缩进显示错误。<br>
+                        新建一行粘贴后，如果左侧没有紧贴边缘，撤销一步！因为VSCode会自动添加缩进导致缩进显示错误。<br>
                         使用 &amp;lt; 来代替代码以及正文中的 &lt;<br>
                         使用 &amp;amp; 来代替转义字符中的 &<br>
                         代码不能对齐html格式的缩进，否则会显示出错。<br>
@@ -264,12 +247,38 @@ namespace HelloWorldApplication
                 <div class="borderline"></div>
                 <div>
     <pre>
-        <code>&lt;p class="intro"></code>
+        <code>&lt;div class="intro">&lt;/div></code>
 </pre>
 </div>
 <p class="intro">
-    在正文中添加和文章简介一样的文字框。<br>在两个&lt;p>标签中间插入文字。<br>因为VSCode会自己补充后面的&lt;/p>所以这里只给前半部分来复制。
+    在正文中添加和文章简介一样的文字框。<br>在&lt;div>标签中间像正文一样使用&lt;p>&lt;/p>插入文字。
 </p>
+                    
+<h2 id="10">折叠窗口</h2>
+<div class="borderline"></div>
+
+<div>
+    <pre>
+        <code>&lt;div class="folder folding">
+    &lt;button class="foldButton">
+        &lt;div class="triangle">&lt;p2>▶&lt;/p2>&lt;h1>&lt;/h1>&lt;/div>
+    &lt;/button>
+    &lt;div class="foldcontent">
+    &lt;/div>
+&lt;/div></code>
+</pre>
+</div>
+
+<p class="intro" style="margin-bottom: 40px;">向下折叠展开的窗口。<br>在&lt;h1>&lt;/h1>内添加折叠窗口标题。<br>在 "foldcontent" div内像正文一样添加内容。</p>
+
+<div class="folder folding">
+    <button class="foldButton">
+        <div class="triangle"><p2>▶</p2><h1>折叠窗口标题</h1></div>
+    </button>
+    <div class="foldcontent">
+        <p>展开后的文字内容示例</p>
+    </div>
+</div>
 
 
             </div>

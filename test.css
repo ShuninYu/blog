@@ -1,0 +1,26 @@
+
+
+  .edibox {  
+    width: 100%; /* 容器宽度自适应 */  
+  }  
+  .toggle-button {  
+    display: block;  
+    margin: 0 auto; /* 水平居中显示按钮 */  
+    padding: 10px 20px; /* 按钮的内边距 */  
+    background-color: rgba(255, 255, 255, 0.5);   /* 透明背景 */  
+    border: 2px solid #33b8e1; /* 天蓝色边框 */  
+    color: #33b8e1; /* 天蓝色字体 */  
+    font-size: 16px; /* 字体大小 */  
+    font-weight: bold; /* 加粗字体 */  
+    cursor: pointer; /* 鼠标指针变为手形 */  
+    transition: background-color 0.3s ease; /* 背景颜色过渡效果 */  
+  }  
+  .toggle-button:hover {  
+    color: #48d9e8; /* 鼠标悬停时的背景颜色，带有透明度 */  
+  }
+  .content {  
+    max-height: 100px; /* 内容区域最大高度为200px */  
+    overflow: hidden; /* 超出部分隐藏 */  
+    transition: max-height 0.5s ease-in-out; /* 展开和收起时的过渡效果 */  
+  }
+  

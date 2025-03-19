@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <title>GithubDesktop找不到VSCode？ | 孤灯的Blog</title>
         <link rel="icon" href="../../../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../../../basic.css">
-        <link rel="stylesheet" type="text/css" href="../../../post.css">
+        <link rel="stylesheet" href="../../../basic.css">
+        <link rel="stylesheet" href="../../../post.css">
         <link rel="stylesheet" href="../../../highlight/styles/monokai.min.css">
-        <script src="../../../basic.js" type="text/javascrip"></script>
+        <script src="../../../basic.js"></script>
         <script src="../../../highlight/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
@@ -37,10 +37,14 @@
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
-                <button class="rightbutton" onclick="location.href='#Windows11'">Windows11
-                <button class="rightbutton" onclick="location.href='#GithubDesktop'">GithubDesktop
-                <button class="rightbutton" onclick="location.href='#消失的“它”'">消失的“它”
-                <button class="rightbutton" onclick="location.href='#题外话(Win11截图功能)'">题外话(Win11截图功能)</button>
+                <div class="navigation">
+                    <div class="navigation">
+                        <button class="rightbutton" onclick="location.href='#Windows11'">Windows11
+                        <button class="rightbutton" onclick="location.href='#GithubDesktop'">GithubDesktop
+                        <button class="rightbutton" onclick="location.href='#消失的“它”'">消失的“它”
+                        <button class="rightbutton" onclick="location.href='#题外话(Win11截图功能)'">题外话(Win11截图功能)</button>
+                    </div>
+                </div class="navigation">
                 <div style="overflow: hidden; padding-top: 3vh;">
                     <div class="line"></div>
                     <p class="sidetitle">Tags</p2>
@@ -57,25 +61,6 @@
         </div>
         <div class="rightheadershadow"></div>
         <div id = "gotop" alt="gotop"></div>
-        <script>
-            window.addEventListener("scroll",handle)
-
-            function handle(){
-                var oTop = document.body.scrollTop||document.documentElement.scrollTop
-                if(oTop>=80){
-                    gotop.style.display = "block";
-                }else{
-                    gotop.style.display = "none";
-                }
-
-                gotop.onclick = function(){
-                    window.scrollTo({
-                        top:0,
-                        behavior:"smooth"
-                    })
-                }
-            }
-        </script>
         <div class="headerdiv">
             <div class="headerimg" style="background-image: url(../../../image/p/2024/20240110a/00.png);"></div>
         </div>
@@ -90,15 +75,14 @@
                     因为一些特殊原因（正文会详细说明）导致我有段时间没有更新网站和Blog。今天更新网站内容的时候发现GithubDesktop找不到VSCode，不能直接从软件里打开VSCode编辑项目文件。软件设置里也没有编辑器启动路径，于是简短的解密之旅开始了……
                 </p>
             </div>
-            <div style="height: 40px;"></div>
             
             <!--正文开始-->
             <div>
                 <h2 id="Windows11">Windows11</h2>
-                <p class="preface intro">2024-4-14 update：本节正文中部分内容已经过时！<br>最近电脑彻底进入不了系统了，找人来排查了一下发现居然是cpu有问题。从始至终我都没怀疑过cpu有问题，这么小概率的事情居然让我碰上了……来排查的大哥说他干了二十年的电脑，算上我这次，一共就遇到过两个cpu有问题的……<br>因为cpu是买的散片，所以准备把cpu寄回给商家售后了，等问题解决了再更新吧。</p>
-                <p class="preface intro">2024-10-8 update：更换cpu几个月后的更新。<br>商家售后给我退款了，考虑到不想换主板内存（AMD最新一代的CPU只能上DDR5），就添了300块买了盒装的14900k。<br>现在真相已经浮出水面了……英特尔13代14代缩缸的问题已经人尽皆知。而我的那颗13900k，很明显也是在bios默认设置以及windows电源计划高性能模式下，用了将近一年后中招了。由于这两代英特尔“出厂灰烬”，主板厂商给的默认电压也很激进，再加上windows电源计划高性能模式会让cpu一直维持在高频，种种高压下让13900k最终不堪重负一蹶不振。<br>在14900k上机以后，我做的第一件事情就是给cpu降压，参考网上同样使用14代酷睿的网友的经验，以及不厌其烦的性能和稳定性测试（主要是R23跑分以及单烤fpu），最终在固定降压0.1v的状态下使用，满载也不会飙到1.5v的恐怖电压了。</p>
-                <p class="preface intro">2025-3-3 update：再次更新。<br>毫不意外的，14900k也缩缸了，最近网页、软件开始无征兆的崩溃，电脑频繁地蓝屏、死机，甚至每次开机以后如果不马上用XTU给大核降频，电脑就会很快死机。cpu温度在刚开机没什么负载的情况下都能干到七十多度，随便开个网页或者上点负载就会飙到九十多度，这绝对是不正常的。<br>最让人无语的是，这次的14900k还是从上机第一天开始就降压使用的，并且更新了bios微码，但是还是无法避免的出现了如此严重的问题。可见英特尔所谓的“电压策略过于激进”很有可能只是为自己找补的接口，13、14代cpu如此糟糕的表现的根本原因还是英特尔产品的质量问题。10纳米工艺的电子残次品，对用户造成了多少麻烦和损失？可笑的5.7Ghz睿频，想要稳定使用只能降频（然而降了也远远称不上稳定）。13900k、14900k，两款cpu，稳定工作的寿命都连一年都达不到，如此糟糕的表现简直令人发笑。<br>反正我从今往后再也不会考虑英特尔的cpu了。之后准备攒钱换9800x3d，这下真的AMD YES了。</p>
-                <p class="preface intro">2025-3-17 update：更换AMD以后的更新。<br>最后选择了AMD的R9 9950X而不是9800X3D，主要是因为我还是比较需要多一些大核，毕竟平时的需求不只有打游戏，而且我还是双屏。9950X的游戏性能目前在很多方面已经强于14900K了，所以最后没有选择9800X3D。<br>同样的，换完CPU以后，许多之前使用英特尔13 14代i9时一直存在的问题全部都迎刃而解了。最简单的就是之前即使全新的CPU都会导致的FIFA23的闪退，其他需要降主频才能正常启动且不能保证稳定运行的游戏，全部都能正常稳定的运行了。Windows11在我这里确实替英特尔背了很多黑锅……</p>
+                <div class="preface intro"><p>2024-4-14 update：本节正文中部分内容已经过时！</p><p>最近电脑彻底进入不了系统了，找人来排查了一下发现居然是cpu有问题。从始至终我都没怀疑过cpu有问题，这么小概率的事情居然让我碰上了……来排查的大哥说他干了二十年的电脑，算上我这次，一共就遇到过两个cpu有问题的……</p><p>因为cpu是买的散片，所以准备把cpu寄回给商家售后了，等问题解决了再更新吧。</p></div>
+                <div class="preface intro"><p>2024-10-8 update：更换cpu几个月后的更新。</p><p>商家售后给我退款了，考虑到不想换主板内存（AMD最新一代的CPU只能上DDR5），就添了300块买了盒装的14900k。</p><p>现在真相已经浮出水面了……英特尔13代14代缩缸的问题已经人尽皆知。而我的那颗13900k，很明显也是在bios默认设置以及windows电源计划高性能模式下，用了将近一年后中招了。由于这两代英特尔“出厂灰烬”，主板厂商给的默认电压也很激进，再加上windows电源计划高性能模式会让cpu一直维持在高频，种种高压下让13900k最终不堪重负一蹶不振。</p><p>在14900k上机以后，我做的第一件事情就是给cpu降压，参考网上同样使用14代酷睿的网友的经验，以及不厌其烦的性能和稳定性测试（主要是R23跑分以及单烤fpu），最终在固定降压0.1v的状态下使用，满载也不会飙到1.5v的恐怖电压了。</p></div>
+                <div class="preface intro"><p>2025-3-3 update：再次更新。</p><p>毫不意外的，14900k也缩缸了，最近网页、软件开始无征兆的崩溃，电脑频繁地蓝屏、死机，甚至每次开机以后如果不马上用XTU给大核降频，电脑就会很快死机。cpu温度在刚开机没什么负载的情况下都能干到七十多度，随便开个网页或者上点负载就会飙到九十多度，这绝对是不正常的。</p><p>最让人无语的是，这次的14900k还是从上机第一天开始就降压使用的，并且更新了bios微码，但是还是无法避免的出现了如此严重的问题。可见英特尔所谓的“电压策略过于激进”很有可能只是为自己找补的接口，13、14代cpu如此糟糕的表现的根本原因还是英特尔产品的质量问题。10纳米工艺的电子残次品，对用户造成了多少麻烦和损失？可笑的5.7Ghz睿频，想要稳定使用只能降频（然而降了也远远称不上稳定）。13900k、14900k，两款cpu，稳定工作的寿命都连一年都达不到，如此糟糕的表现简直令人发笑。</p><p>反正我从今往后再也不会考虑英特尔的cpu了。之后准备攒钱换9800x3d，这下真的AMD YES了。</p></div>
+                <div class="preface intro"><p>2025-3-17 update：更换AMD以后的更新。</p><p>最后选择了AMD的R9 9950X而不是9800X3D，主要是因为我还是比较需要多一些大核，毕竟平时的需求不只有打游戏，而且我还是双屏。9950X的游戏性能目前在很多方面已经强于14900K了，所以最后没有选择9800X3D。</p><p>同样的，换完CPU以后，许多之前使用英特尔13 14代i9时一直存在的问题全部都迎刃而解了。最简单的就是之前即使全新的CPU都会导致的FIFA23的闪退，其他需要降主频才能正常启动且不能保证稳定运行的游戏，全部都能正常稳定的运行了。Windows11在我这里确实替英特尔背了很多黑锅……</p></div>
                 
                 <p>一切的一切都要从换新电脑以后开始说起。</p>
                 <p>新电脑cpu是13900k，所以为了“充分发挥大小核的性能”，也为了满足我对Win11图形界面的好奇，新电脑的系统就选择了Windows11。</p>

@@ -20,19 +20,16 @@ code {
         background-color: rgb(80 , 80 , 80);
     }
 
+    .foldcontent .intro {
+        background-color: rgb(100, 100, 100);
+    }
+
     .imgbox p{
         color: rgb(170, 170, 170);
     }
 
     .sidetitle {
         color:rgb(0, 0, 0);
-    }
-
-    .disqus {
-        background-color: white;
-        border: solid 10px white;
-        border-radius: 20px;
-        box-shadow: 0 0 0 10px rgb(194, 198, 204);
     }
 
     .tag {
@@ -43,11 +40,28 @@ code {
     .tag:hover {
         background-color: rgb(222 , 222 , 222);
     }
+
+    p4 {
+        color: rgb(255, 255, 255);
+    }
+    
+    .folder {
+        background-color: rgb(80 , 80 , 80);
+    }
+    
+    .foldButton {
+        background-color: rgb(80 , 80 , 80);
+        color: rgb(255, 255, 255);
+    }
 }
 
 @media (prefers-color-scheme:dark){
     .intro {
         background-color: rgb(35, 37, 44);
+    }
+
+    .foldcontent .intro {
+        background-color: rgb(26, 27, 31);
     }
 
     .headerimg {
@@ -66,13 +80,6 @@ code {
         color: rgb(170, 193, 255);
     }
 
-    .disqus {
-        background-color: rgb(26, 27, 31);
-        border: solid 20px rgb(26, 27, 31);
-        border-radius: 20px;
-        box-shadow: 0 0 0 10px rgb(177, 177, 177);
-    }
-
     .tag {
         color: rgb(170, 200, 255);
         background-color: rgb(38, 40, 48);
@@ -81,10 +88,59 @@ code {
     .tag:hover {
         background-color: rgb(15, 16, 20);
     }
+
+    p4 {
+        color: gray;
+    }
+    
+    .folder {
+        background-color: rgb(35, 37, 44);
+    }
+    
+    .foldButton {
+        background-color: rgb(35, 37, 44);
+        color: rgb(200, 200, 200);
+    }
 }
 
 @media (prefers-color-scheme:no-preference){
+    .intro {
+        background-color: rgb(80 , 80 , 80);
+    }
+
+    .foldcontent .intro {
+        background-color: rgb(100, 100, 100);
+    }
+
+    .imgbox p{
+        color: rgb(170, 170, 170);
+    }
+
+    .sidetitle {
+        color:rgb(0, 0, 0);
+    }
+
+    .tag {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233 , 233 , 233);
+    }
+
+    .tag:hover {
+        background-color: rgb(222 , 222 , 222);
+    }
+
+    p4 {
+        color: rgb(255, 255, 255);
+    }
     
+    .folder {
+        background-color: rgb(80 , 80 , 80);
+    }
+    
+    .foldButton {
+        background-color: rgb(80 , 80 , 80);
+        color: rgb(255, 255, 255);
+    }
 }
 
 .script {
@@ -110,6 +166,17 @@ h3 {
     padding-bottom: 0.5em;
 }
 
+p {
+    line-height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.rss p {
+    line-height: 1em;
+    padding: 0;
+}
+
 ps {
     font-size: 0.825em;
     line-height: 1em;
@@ -124,27 +191,77 @@ p1 {
 }
 
 p4 {
-    color: gray;
     font-family: 'Consolas';
-}
-
-.preface {
-    width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    float: left;
-}
-
-.intro {
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 20px;
 }
 
 .borderline {
     width:100%;
     height: 2px;
     background-color:rgb(177, 177, 177);
+}
+
+.folder {
+    font-size: large;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.unfold {
+    max-height: none;
+}
+
+.folding {
+    overflow: hidden;
+    max-height: 3.3em;
+}
+
+.foldcontent {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.foldButton {
+    font-size: large;
+    height: 3.3em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.foldButton .triangle {
+    display: inline-block;
+}
+
+.foldButton h1{
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.foldButton p2{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.headerdiv {
+    padding-left: 18vw;
+    width: 82vw;
+    height: 16vw;
+    overflow: hidden;
+}
+
+.headerimg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .imgbox {
@@ -169,6 +286,42 @@ p4 {
     padding-right: auto;
 }
 
+.intro {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+}
+
+.main {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navigatag {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 34vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.preface {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
 .sidetitle {
     font-size: 1.5vw;
     text-align:center;
@@ -185,29 +338,9 @@ p4 {
     border-radius: 8px 8px 8px 8px;
 }
 
-.main {
-    font-size: 24px;
-    font-weight: normal;
-}
-
 ul {
     padding-left: 2em;
     padding-bottom: 2em;
-}
-
-.headerdiv {
-    padding-left: 18vw;
-    width: 82vw;
-    height: 16vw;
-    overflow: hidden;
-}
-
-.headerimg {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 .wordbutton{
@@ -222,19 +355,4 @@ ul {
 
 .wordbutton:hover {
     background-color:  rgb(99, 120, 120)/*rgb(0, 31, 97)*/;
-}
-
-.disqus {
-    width: 40vw;
-    margin-left:30vw;
-}
-
-.disqusp {
-    font-size: 30px;
-    font-weight: normal;
-    margin-left: 30vw;
-}
-
-.disqusp sub{
-    font-size: 16px;
 }
