@@ -98,6 +98,16 @@
     .rss {
         background-image: url("image/RSS_light.svg");
     }
+
+    .copyTimeButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(220, 220, 220);
+    }
+
+    .copyTimeButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(200, 200, 200);
+    }
 }
 
 @media (prefers-color-scheme:dark){
@@ -183,6 +193,16 @@
     .rss {
         background-image: url("image/RSS_dark.svg");
     }
+
+    .copyTimeButton {
+        color: rgb(170, 190, 255);
+        background-color: rgb(35, 38, 46);
+    }
+
+    .copyTimeButton:hover {
+        color: rgb(211, 220, 255);
+        background-color: rgb(40, 43, 53);
+    }
 }
 
 @media (prefers-color-scheme:no-preference){
@@ -266,6 +286,16 @@
 
     .rss {
         background-image: url("image/RSS_light.svg");
+    }
+
+    .copyTimeButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(220, 220, 220);
+    }
+
+    .copyTimeButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(200, 200, 200);
     }
 }
 
@@ -507,10 +537,6 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     height: 12px;
 }
 
-/*定义滑块 内阴影+圆角*/
-::-webkit-scrollbar-thumb {
-}
-
 .rss {
     height: 4vw;
     margin-left: 3vw;
@@ -534,4 +560,19 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     height: 40vh;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.copyTimeButton {
+    cursor:pointer;
+    border-style: none;
+    font-weight: normal;
+    font-size: medium;
+    margin: 0;
+    height: 2em;
+    min-width: 50%;
+    max-width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+    transition: 0.5s;
 }

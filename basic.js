@@ -1,10 +1,10 @@
 /** js document */
-console.log('Hello, world!');
+console.log('基础JS加载中……');
 
 // 动态加载CSS文件
 (function() {
     //字体css
-    var cssUrl = 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css'; // 替换为你的CSS URL
+    var cssUrl = 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css'; // CSS URL
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = cssUrl;
@@ -113,12 +113,12 @@ document.addEventListener('DOMContentLoaded', setupToggleButtons);
 // 侧边按钮折叠窗口的展开和收起功能
 // 定义一个函数，用于设置所有toggleButton的点击事件
 function setupSideToggleButtons() {
-    // 获取所有具有'toggleButton'类名的元素
+    // 获取所有具有'sideFoldButton'类名的元素
     const toggleButtons = document.querySelectorAll('.sideFoldButton');
 
     // 遍历所有toggleButton元素
     toggleButtons.forEach(function(toggleButton) {
-        // 获取与当前toggleButton相关联的fold元素
+        // 获取与当前toggleButton相关联的sideFolder元素
         const fold = toggleButton.closest('.sideFolder');
         const foldtip = toggleButton.querySelector('.sideTriangle p2');
 
@@ -149,3 +149,58 @@ function setupSideToggleButtons() {
 
 // 等待DOM内容加载完毕后再执行设置函数
 document.addEventListener('DOMContentLoaded', setupSideToggleButtons);
+
+
+// 复制当前时间按钮的功能
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 通过class查找按钮
+    const copyTimeButtons = document.querySelectorAll('.copyTimeButton');
+
+    copyTimeButtons.forEach(button => {
+        let timeoutId = null; // 用于存储定时器的ID
+
+        button.addEventListener('click', function() {
+            // 清除之前的提示文字和定时器
+            clearTimeout(timeoutId); // 取消任何正在进行的倒计时
+            button.textContent = button.textContent.replace(/ \(.*?\)$/, '');
+
+            // 获取当前时间并格式化为RFC822格式
+            const now = new Date();
+            const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const day = days[now.getDay()];
+            const date = now.getDate();
+            const month = months[now.getMonth()];
+            const year = now.getFullYear();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeZoneOffset = -now.getTimezoneOffset() / 60;
+            const timeZone = (timeZoneOffset >= 0 ? '+' : '-') + String(Math.abs(timeZoneOffset)).padStart(2, '0') + '00';
+            const rfc822Time = `${day}, ${date} ${month} ${year} ${hours}:${minutes}:${seconds} ${timeZone}`;
+
+            // 复制到剪贴板，并显示提示文字
+            navigator.clipboard.writeText(rfc822Time).then(function() {
+                // 复制成功，添加提示文字
+                const tipText = ' (复制成功)';
+                button.textContent += tipText;
+
+                // 设置定时器，3秒后清除提示文字
+                timeoutId = setTimeout(function() {
+                    button.textContent = button.textContent.replace(tipText, '');
+                }, 3000);
+            }).catch(function(err) {
+                console.error('复制失败: ', err);
+                // 复制失败，添加提示文字
+                const tipText = ' (复制失败)';
+                button.textContent += tipText;
+
+                // 同样设置定时器，3秒后清除提示文字
+                timeoutId = setTimeout(function() {
+                    button.textContent = button.textContent.replace(tipText, '');
+                }, 3000);
+            });
+        });
+    });
+});

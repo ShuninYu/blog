@@ -124,7 +124,7 @@
 
 .homelatest {
     width: 70%;
-    height: 300px;
+    max-height: 30vh;
     border-radius: 20px;
     text-align: left;
     margin-left: auto;
@@ -142,11 +142,10 @@
 
 .latesta h1 {
     font-weight: lighter;
-    padding-top: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 800px;
+    padding-top: 1vh;
+    padding-bottom: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -155,13 +154,14 @@
 .latesta p{
     font-weight: lighter;
     line-height: 2em;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
 }
 
 .latesta p10086{
     font-weight: lighter;
     line-height: 1em;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
