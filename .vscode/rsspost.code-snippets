@@ -1,0 +1,15 @@
+{
+	"rss文章更新模板": {
+	"prefix": "rss",
+	"body": [
+	  "<item>",
+	  "    <title></title>",
+	  "    <link isPermaLink=\"true\">https://blog.shuninyu.fun/</link>",
+	  "    <guid>https://blog.shuninyu.fun/</guid>",
+	  "    <pubDate></pubDate>",
+	  "    <description></description>",
+	  "</item>"
+	],
+	"description": "rss文章更新模板"
+  }
+}

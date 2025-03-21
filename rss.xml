@@ -12,6 +12,14 @@
         <pubDate>Thu, 08 Sep 2022 09:31:00 +0800</pubDate>
         <generator>孤灯的双手以及VSCode</generator>
         <copyright>©2022 ShuininYu. All rights reserved.</copyright>
+        <!-- 文章列表，在此行下面输入rss按tab添加更新 -->
+        <item>
+            <title></title>
+            <link isPermaLink="true">https://blog.shuninyu.fun/p/top/problems</link>
+            <guid>https://blog.shuninyu.fun/p/top/problems</guid>
+            <pubDate>Fri, 19 Mar 2025 19:42:26 +0800</pubDate>
+            <description>各类软硬件的疑难杂症解决方案，不定期持续更新。</description>
+        </item>
         <item>
             <title>Blog参考文档</title>
             <link isPermaLink="true">https://blog.shuninyu.fun/doc</link>
