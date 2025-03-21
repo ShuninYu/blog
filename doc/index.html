@@ -36,7 +36,8 @@
                     <button class="rightbutton" onclick="location.href='#7'">黑幕文字
                     <button class="rightbutton" onclick="location.href='#8'">备注文字（p.s.）
                     <button class="rightbutton" onclick="location.href='#9'">补充文字
-                    <button class="rightbutton" onclick="location.href='#10'">折叠窗口</button>
+                    <button class="rightbutton" onclick="location.href='#10'">折叠窗口
+                    <button class="rightbutton" onclick="location.href='#11'">导航栏折叠窗口</button>
                 </div>
             </div>
         </div>
@@ -251,7 +252,7 @@ namespace HelloWorldApplication
 </pre>
 </div>
 <p class="intro">
-    在正文中添加和文章简介一样的文字框。<br>在&lt;div>标签中间像正文一样使用&lt;p>&lt;/p>插入文字。
+    在正文中添加和这段文本以及文章简介一样的文字框。<br>在&lt;div>标签中间像正文一样使用&lt;p>&lt;/p>插入文字。
 </p>
                     
 <h2 id="10">折叠窗口</h2>
@@ -273,11 +274,34 @@ namespace HelloWorldApplication
 
 <div class="folder folding">
     <button class="foldButton">
-        <div class="triangle"><p2>▶</p2><h1>折叠窗口标题</h1></div>
+        <div class="triangle"><p2>▶</p2><h1>折叠窗口效果预览</h1></div>
     </button>
     <div class="foldcontent">
         <p>展开后的文字内容示例</p>
     </div>
+</div>
+        
+<h2 id="11">导航栏折叠窗口</h2>
+<div class="borderline"></div>
+<div>
+    <pre>
+        <code>&lt;div class="sideFolder sideFolding">
+    &lt;div class="sideFoldHeader">
+    &lt;button class="sideFoldButton sideTriangle">&lt;p2>▶&lt;/p2>&lt;/button>
+        &lt;button class="sideFoldRightButton" onclick="location.href='#'">&lt;/button>
+    &lt;/div>
+    &lt;div class="sideFoldcontent">
+        &lt;button class="sideRightButton" onclick="location.href='#'">&lt;/button>
+    &lt;/div>
+&lt;/div></code>
+</pre>
+</div>
+<div class="intro">
+    <p>侧边栏导航按钮折叠版。<br>在 ▶ 右侧填入父导航按钮内容，在sideFoldcontent内添加子按钮。</p>
+</div>
+<div class="imgbox">
+    <img src="../image/sidefold.png">
+    <p>效果预览截图（展开前后对比）</p>
 </div>
 
 

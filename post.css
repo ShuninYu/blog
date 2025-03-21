@@ -53,6 +53,51 @@ code {
         background-color: rgb(80 , 80 , 80);
         color: rgb(255, 255, 255);
     }
+    
+    .sideFolder {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideFolding .sideFoldButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideFolding .sideFoldButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .sideUnfold .sideFoldButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(220, 220, 220);
+    }
+
+    .sideUnfold .sideFoldButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(200, 200, 200);
+    }
+
+    .sideRightButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideRightButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
+
+    .sideFoldRightButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideFoldRightButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
 }
 
 @media (prefers-color-scheme:dark){
@@ -101,6 +146,51 @@ code {
         background-color: rgb(35, 37, 44);
         color: rgb(200, 200, 200);
     }
+    
+    .sideFolder {
+        color: rgb(170, 190, 255);
+        background-color: rgb(22, 23, 26);
+    }
+
+    .sideFolding .sideFoldButton {
+        color: rgb(170, 190, 255);
+        background-color: rgb(22, 23, 26);
+    }
+
+    .sideFolding .sideFoldButton:hover {
+        color: rgb(211, 220, 255);
+        background-color: rgb(27, 29, 34);
+    }
+    
+    .sideUnfold .sideFoldButton {
+        color: rgb(170, 190, 255);
+        background-color: rgb(35, 38, 46);
+    }
+
+    .sideUnfold .sideFoldButton:hover {
+        color: rgb(211, 220, 255);
+        background-color: rgb(40, 43, 53);
+    }
+
+    .sideRightButton {
+        color: rgb(170, 190, 255);
+        background-color: rgb(22, 23, 26);
+    }
+
+    .sideRightButton:hover {
+        color: rgb(211, 220, 255);
+        background-color: rgb(27, 29, 34);
+    }
+
+    .sideFoldRightButton {
+        color: rgb(170, 190, 255);
+        background-color: rgb(22, 23, 26);
+    }
+
+    .sideFoldRightButton:hover {
+        color: rgb(211, 220, 255);
+        background-color: rgb(27, 29, 34);
+    }
 }
 
 @media (prefers-color-scheme:no-preference){
@@ -140,6 +230,51 @@ code {
     .foldButton {
         background-color: rgb(80 , 80 , 80);
         color: rgb(255, 255, 255);
+    }
+    
+    .sideFolder {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideFolding .sideFoldButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideFolding .sideFoldButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .sideUnfold .sideFoldButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(220, 220, 220);
+    }
+
+    .sideUnfold .sideFoldButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(200, 200, 200);
+    }
+
+    .sideRightButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideRightButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+    }
+
+    .sideFoldRightButton {
+        color: rgb(160 ,160 ,160);
+        background-color: rgb(255 , 255 , 255);
+    }
+
+    .sideFoldRightButton:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
     }
 }
 
@@ -266,6 +401,10 @@ p4 {
 
 .imgbox {
     text-align: center;
+    padding-top: 0;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .imgbox p {
@@ -281,15 +420,13 @@ p4 {
     border-radius: 10px;
     max-width: 100%;
     max-height: 70vh;
-    margin-top: 1em;
-    padding-left: auto;
-    padding-right: auto;
 }
 
 .intro {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 20px;
+    margin-bottom: 1em;
 }
 
 .main {
@@ -305,11 +442,80 @@ p4 {
     overflow-x: hidden;
 }
 
-.preface {
+.sideFolder {
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-style: none;
+    margin: 0;
+    min-height: 30px;
+    overflow: hidden;
+}
+
+.sideUnfold {
+    max-height: none;
+    height: auto;
+}
+
+.sideFolding {
+    max-height: 5vh;
+    overflow: hidden;
+}
+
+.sideFoldcontent {
+}
+
+.sideFoldButton {
+    height: 100%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sideFoldButton p2{
+    font-size: 1em;
+}
+
+.sideFoldHeader {
+    display: flex;
+    height: 5vh;
+}
+
+.sideFoldRightButton {
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 7vh;
+    border-style: none;
+    cursor:pointer;
+    margin: 0;
+    height: 5vh;
+    font-size: large;
+    font-weight: lighter;
+    transition: 0.5s;
     width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sideRightButton {
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vh;
+    padding-left: 2vh;
+    padding-right: 7vh;
+    border-style: none;
+    cursor:pointer;
+    height: 5vh;
+    font-size: large;
+    font-weight: lighter;
+    transition: 0.5s;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .sidetitle {

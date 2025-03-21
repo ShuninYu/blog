@@ -107,3 +107,45 @@ function setupToggleButtons() {
 
 // 等待DOM内容加载完毕后再执行设置函数
 document.addEventListener('DOMContentLoaded', setupToggleButtons);
+
+
+
+// 侧边按钮折叠窗口的展开和收起功能
+// 定义一个函数，用于设置所有toggleButton的点击事件
+function setupSideToggleButtons() {
+    // 获取所有具有'toggleButton'类名的元素
+    const toggleButtons = document.querySelectorAll('.sideFoldButton');
+
+    // 遍历所有toggleButton元素
+    toggleButtons.forEach(function(toggleButton) {
+        // 获取与当前toggleButton相关联的fold元素
+        const fold = toggleButton.closest('.sideFolder');
+        const foldtip = toggleButton.querySelector('.sideTriangle p2');
+
+        // 给toggleButton添加点击事件监听器
+        toggleButton.addEventListener('click', function() {
+            // 检查fold是否存在
+            if (fold) {
+                // 切换fold的展开和收起状态
+                if (fold.classList.contains('sideFolding')) {
+                    // 如果当前是收起状态，则展开
+                    fold.classList.remove('sideFolding');
+                    fold.classList.add('sideUnfold');
+
+                    // 同时将foldtip中的文本改为表示展开状态的符号
+                    foldtip.textContent = '▼';
+                } else {
+                    // 如果当前是展开状态，则收起
+                    fold.classList.remove('sideUnfold');
+                    fold.classList.add('sideFolding');
+
+                    // 同时将foldtip中的文本改为表示收起状态的符号
+                    foldtip.textContent = '▶';
+                }
+            }
+        });
+    });
+}
+
+// 等待DOM内容加载完毕后再执行设置函数
+document.addEventListener('DOMContentLoaded', setupSideToggleButtons);

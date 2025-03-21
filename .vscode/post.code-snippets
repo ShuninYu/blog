@@ -89,7 +89,7 @@
 	  "            <div class=\"borderline\"></div>",
 	  "            <p1>年-月-日 - 时:分 | 最后更新：年-月-日</p1>",
 	  "            <div style=\"width: 100%; overflow: hidden;\">",
-	  "                <p class=\"preface intro\">",
+	  "                <p class=\"intro\">",
 	  "                    //此处填前言",
 	  "                </p>",
 	  "            </div>",

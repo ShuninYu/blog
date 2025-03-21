@@ -38,9 +38,39 @@
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
                 <div class="navigation">
-                    <button class="rightbutton" onclick="location.href='#硬件类'">硬件类
-                    <button class="rightbutton" onclick="location.href='#软件类'">软件类
-                    <button class="rightbutton" onclick="location.href='#特别情况Q&A'">特别情况Q&A</button>
+
+                    <div class="sideFolder sideFolding">
+                        <div class="sideFoldHeader">
+                            <button class="sideFoldButton sideTriangle"><p2>▶</p2></button>
+                            <button class="sideFoldRightButton" onclick="location.href='#硬件类'">硬件类</button>
+                        </div>
+                        <div class="sideFoldcontent">
+                            <button class="sideRightButton" onclick="location.href='#硬件类01'">台式机前面板耳机孔有杂音</button>
+                            <button class="sideRightButton" onclick="location.href='#硬件类02'">GPW一代板载灯效异常</button>
+                            <button class="sideRightButton" onclick="location.href='#硬件类03'">双屏或多屏情况下，浏览器多开同时播放视频直播卡顿</button>
+                        </div>
+                    </div>
+
+                    <div class="sideFolder sideFolding">
+                        <div class="sideFoldHeader">
+                            <button class="sideFoldButton sideTriangle"><p2>▶</p2></button>
+                            <button class="sideFoldRightButton" onclick="location.href='#软件类'">软件类</button>
+                        </div>
+                        <div class="sideFoldcontent">
+                            <button class="sideRightButton" onclick="location.href='#软件类01'">Github Desktop找不到VSCode</button>
+                        </div>
+                    </div>
+
+                    <div class="sideFolder sideFolding">
+                        <div class="sideFoldHeader">
+                            <button class="sideFoldButton sideTriangle"><p2>▶</p2></button>
+                            <button class="sideFoldRightButton" onclick="location.href='#特别情况Q&A'">特别情况Q&A</button>
+                        </div>
+                        <div class="sideFoldcontent">
+                            <button class="sideRightButton" onclick="location.href='#Q&A01'">intel平台更换到AMD平台是否需要重装系统？</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div style="overflow: hidden; padding-top: 3vh;">
                     <div class="line"></div>
@@ -48,9 +78,8 @@
                 </div>
                 <div class="line"></div>
                 <div style="height: 1vh;"></div>
-                    <p3 class="tag main">#类别标签</p3><br>
-                    <p3 class="tag">#次要标签1</p3><br>
-                    <p3 class="tag">#次要标签2</p3>
+                    <p3 class="tag main">#</p3><br>
+                    <p3 class="tag">#</p3>
             </div>
         </div>
         <div class="rightheadershadow"></div>
@@ -70,7 +99,7 @@
             <div>
                 <h2 id="硬件类">硬件类</h2>
 
-                <div class="folder folding">
+                <div class="folder folding" id="硬件类01">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>台式机前面板耳机孔有杂音</h1></div>
                     </button>
@@ -79,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="folder folding">
+                <div class="folder folding" id="硬件类02">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>GPW一代板载灯效异常</h1></div>
                     </button>
@@ -115,7 +144,7 @@
                     </div>
                 </div>
                 
-                <div class="folder folding">
+                <div class="folder folding" id="硬件类03">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>双屏或多屏情况下，浏览器多开同时播放视频直播卡顿</h1></div>
                     </button>
@@ -151,7 +180,7 @@
                 </div>
 
                 <h2 id="软件类">软件类</h2>   
-                <div class="folder folding">
+                <div class="folder folding" id="软件类01">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>Github Desktop找不到VSCode</h1></div>
                     </button>
@@ -161,7 +190,7 @@
                 </div>
 
                 <h2 id="特别情况Q&A">特别情况Q&A</h2>
-                <div class="folder folding">
+                <div class="folder folding" id="Q&A01">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>intel平台更换到AMD平台是否需要重装系统？</h1></div>
                     </button>

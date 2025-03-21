@@ -432,6 +432,9 @@ body:not(.heimu_toggle_on) .heimu.off .new,body:not(.heimu_toggle_on) .heimu.off
     font-size: large;
     font-weight: lighter;
     transition: 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .rightheader {
