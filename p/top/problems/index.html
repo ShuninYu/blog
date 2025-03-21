@@ -60,7 +60,7 @@
             <!--文章开始-->
             <h1>赛博药方——疑难杂症解决方案合集（持续更新）</h1>
             <div class="borderline"></div>
-            <p1>2025年3月19日 - 15:11 | 最后更新：年-月-日</p1>
+            <p1>2025年3月19日 - 15:11 | 最后更新：2025年3月21日</p1>
             <div style="width: 100%; overflow: hidden;">
                 <p class="preface intro">
                     此处收集一些各类软硬件的疑难杂症解决方案，方便日后查阅。
@@ -69,6 +69,7 @@
             <!--正文开始-->
             <div>
                 <h2 id="硬件类">硬件类</h2>
+
                 <div class="folder folding">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>台式机前面板耳机孔有杂音</h1></div>
@@ -77,6 +78,7 @@
                         <p>打开背板检查走线，调整前面板的音频口线和CPU供电线的位置，让两者尽量远离。</p>
                     </div>
                 </div>
+
                 <div class="folder folding">
                     <button class="foldButton">
                         <div class="triangle"><p2>▶</p2><h1>GPW一代板载灯效异常</h1></div>
@@ -110,6 +112,41 @@
                             <img src="../../../image/p/top/problems/05.png">
                         </div>
                         <p>设置好板载设置后重新插拔GPW，问题解决。</p>
+                    </div>
+                </div>
+                
+                <div class="folder folding">
+                    <button class="foldButton">
+                        <div class="triangle"><p2>▶</p2><h1>双屏或多屏情况下，浏览器多开同时播放视频直播卡顿</h1></div>
+                    </button>
+                    <div class="foldcontent">
+                        <div class="intro">
+                            <p>这个问题根据不同硬件，有不同的解决办法。</p><p>有可能是浏览器或者系统设置的问题，也有可能是显卡设置的问题（AMD FreeSync）。</p><p>如果多屏的每块屏幕分辨率、刷新率都相同，那基本就是系统设置问题。浏览器的硬件加速没有用你的独立显卡所以造成播放卡顿，要么关闭浏览器硬件加速，要么让系统给浏览器分配正确的GPU。</p><p>或者干脆关了硬件加速再修改系统设置。</p>
+                        </div>
+                        <p>通用方法：<br>关闭浏览器的硬件加速/图形加速，或在Windows设置中将浏览器的显示卡设置改为高性能。<br>或者两个都改。</p>
+                        <div class="intro">
+                            <p>下面以 Chrome 和 Windows11 23H2 举例：</p>
+                        </div>
+                        <p>浏览器：<br>打开设置>系统，关闭 使用图形加速功能。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/06.png">
+                        </div>
+                        <p>Windows设置：<br>打开系统>屏幕>显示卡。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/07.png">
+                        </div>
+                        <p>在 搜索此列表 搜索Chrome，如果搜不到就点上面添加应用下的 浏览 添加Chrome.exe（如果你是在微软商店安装的浏览器，就吧桌面应用改成 Microsoft Store应用）。</p><p>Chrome.exe 通常在 C:\Program Files\Google\Chrome\Application 内。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/08.png">
+                        </div>
+                        <p>添加完以后，找到Google Chrome，打开选项。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/09.png">
+                        </div>
+                        <p>把图形首选项改成高性能，保存。</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/10.png">
+                        </div>
                     </div>
                 </div>
 
