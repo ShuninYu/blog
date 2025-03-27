@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>通过Github管理1Panel纯静态网站更新 | 孤灯的Blog</title>
+        <link rel="icon" href="../../../favicon.ico">
+        <link rel="stylesheet" href="../../../basic.css">
+        <link rel="stylesheet" href="../../../post.css">
+        <link rel="stylesheet" href="../../../highlight/styles/monokai.min.css">
+        <script src="../../../basic.js"></script>
+        <script src="../../../highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body>
+        <div class="leftheader">
+            <div class="leftblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <p2>孤灯从流</br>的博客</br></p2>
+                    <p3>ShuninYu 's Blog</p3>
+                </div>
+                <div style="height: 5vh;"></div>
+                <button class="leftbutton" onclick="location.href='/'">主页
+                <button class="leftbutton" onclick="location.href='/archives'">归档
+                <button class="leftbutton" onclick="location.href='/about'">关于
+                <button class="leftbutton" onclick="location.href='/friends'">友链
+                <button class="leftbutton" onclick="location.href='https://www.shuninyu.fun'">主站</button>
+                <button class="leftbutton" onclick="location.href='https://blog.shuninyu.fun/rss.xml'"><div class="rss"><p>通过RSS订阅</p><br/>Subscribe via RSS</div></button>
+            </div>
+        </div>
+        <div class="leftheadershadow"></div>
+        <div class="rightheader">
+            <div class="rightblanket">
+                <div style="overflow: hidden; padding-top: 5vh;">
+                    <div class="line"></div>
+                    <p class="sidetitle">页内导航</p2>
+                </div>
+                <div class="line"></div>
+                <div style="height: 1vh;"></div>
+                <div class="navigation">
+                    <button class="rightbutton" onclick="location.href='#安装Github Desktop'">安装Github Desktop
+                    <button class="rightbutton" onclick="location.href='#创建github仓库'">创建github仓库
+                    <button class="rightbutton" onclick="location.href='#本地仓库部署'">本地仓库部署
+                    <button class="rightbutton" onclick="location.href='#上传本地文件到仓库'">上传本地文件到仓库
+                    <button class="rightbutton" onclick="location.href='#克隆仓库到服务器'">克隆仓库到服务器
+                    <button class="rightbutton" onclick="location.href='#在服务器上拉取最新代码'">在服务器上拉取最新代码
+                    <button class="rightbutton" onclick="location.href='#推送更新标准流程'">推送更新标准流程
+                    </button>
+                </div>
+                <div style="overflow: hidden; padding-top: 3vh;">
+                    <div class="line"></div>
+                    <p class="sidetitle">Tags</p2>
+                </div>
+                <div class="line"></div>
+                <div style="height: 1vh;"></div>
+                <div class="navigatag">
+                    <p3 class="tag main">#静态网站</p3><br>
+                    <p3 class="tag">#Github</p3><br>
+                    <p3 class="tag">#1Panel</p3>
+                </div>
+            </div>
+        </div>
+        <div class="rightheadershadow"></div>
+        <div id = "gotop" alt="gotop"></div>
+        <div class="headerdiv">
+            <div class="headerimg" style="background-image: url(../../../image/p/2025/202501/00.png);"></div>
+        </div>
+        <div class="article">
+            <div style="width: 100%; height:80px;"></div>
+            <!--文章开始-->
+            <h1>通过Github管理1Panel纯静态网站更新</h1>
+            <div class="borderline"></div>
+            <p1>2025-3-22 - 16:25 | 最后更新：/-/-/</p1>
+            <div style="width: 100%; overflow: hidden;">
+                <div class="intro">
+                    <p>之前一直使用github pages托管我的网站，但是github pages在内地的访问体验实在感人，所以我就把网站转移到了阿里云的服务器上，用1Panel来托管网站。</p>
+                    <p>虽然内地的访问确实流畅了很多，但是由于我的网站是纯手搓静态网站，所以每次对网站的更新都需要手动上传文件。虽然这个过程很简单，但是每次都要做就很麻烦，而且还涉及文件冲突、版本控制等等不方便的因素。所以就想了一个办法：既然我的网站是静态的，那么我可以把网站的源代码托管到Github上，然后在1Panel上直接从Github拉取最新的代码，这样整体基本回归了github pages时的操作流程，还可以直接继承现有的github pages仓库。</p>
+                </div>
+                <div class="intro">
+                    <p>我使用的管理面板是1Panel，阿里云云服务器，Ubuntu系统。本文方法理论上适用于任何使用openresty托管网站的服务器管理面板。</p>
+                    <p>本文方法也适合没有接触过git和github的人操作，只需要跟着步骤部署，完成以后就可以简单的管理静态网站的版本更新（前提是你的网站是通过服务器管理面板部署的），对于很多轻量化的静态网站部署和更新需求也都够用。</p>
+                </div>
+            </div>
+            <!--正文开始-->
+            <div>
+                <h2 id="安装Github Desktop">安装Github Desktop</h2>
+                <p>进入<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://github.com/apps/desktop">Github Desktop主页</a>，点击Download Now。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/01.png">
+                    <p>看到最下面的白色按钮了吗？就是它</p>
+                </div>
+                <p>进入下载页，点击Download for Windows下载安装包。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/02.png">
+                    <p>还是白色的按钮</p>
+                </div>
+                <p>下载好后运行安装包，除了安装路径以外，一路默认即可。</p>
+                <p>启动Github Desktop，登录你的github账号（没有就注册一个，网上教程很多），Github Desktop的准备工作就完成了。</p>
+                <p>因为Github Desktop自带Git Bash，所以如果你对Git并不熟悉而且只有本文的功能需求，那就可以不安装Git，但是在服务器端还是会用到简单的git指令。</p>
+
+                <h2 id="创建github仓库">创建github仓库</h2>
+                <p>如果你已经有了一个github pages仓库，可以直接跳过这一步。</p>
+                <p>进入github官网，登录你的账号，然后找到网页右上角的加号 + 按钮，选择 New repository 创建新仓库。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/03.png">
+                </div>
+                <p>在弹出的页面中的 Repository name 内填写仓库名称（随便起，建议起比较好分辨的名称，比如blog、website等等），注意不要把下面的 public 切换为 private。其实对于纯静态网站来说，公开不公开没什么区别，只要别人访问了你的网站，就要接收你的html、css、js以及各种媒体文件，这也基本上就是静态网站里所有的文件了。所以即使你设置了私密仓库，你的网站文件基本还是公开的。</p>
+                <p>做好仓库设置以后点击 Create repository 来完成创建。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/04.png">
+                    <p>这里我用website来当做示例仓库名称</p>
+                </div>
+                <p id="httpslink">创建成功后，请注意仓库主页的quick setup部分，HTTPS后面的链接我们之后会用到，可以先复制保存下来。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/05.png">
+                    <p>复制你仓库这里的链接，后面会用</p>
+                </div>
+
+                <h2 id="本地仓库部署">本地仓库部署</h2>
+                <p>打开Github Desktop，点击左上角的 File -> Clone repository 来克隆仓库。找到你的网站仓库，选择它。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/06.png">
+                    <p>我的仓库比较多，所以我搜索了一下</p>
+                </div>
+                <p>选择好仓库后，在下面的 Local Path 部分选择你打算把仓库克隆到的位置，注意目标位置必须是空文件夹。选择好后点击 Clone 按钮，等待仓库克隆到本地即可。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/07.png">
+                </div>
+
+                <h2 id="上传本地文件到仓库">上传本地文件到仓库</h2>
+                <p>仓库克隆好以后会出现下图的界面，注意左上角的 current repository 选择的是你的网站仓库，如果不是就手动点开切换到网站仓库。另外这里我设置的编辑器是VSCode，你可以根据自己的需要设置你想用的编辑器。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/08.png">
+                </div>
+                <p>Ctrl + shift + F 打开仓库文件夹，把你的网站文件复制到打开的文件夹里。</p>
+                <p>复制好文件后回到 Github Desktop 会看到界面出现了本地仓库变更内容。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/09.png">
+                    <p>在 Github Desktop当中，绿色的部分表示新增的内容，红色部分表示删除的内容。</p>
+                </div>
+                <p>在左下角窗口的小框中填写此次更新的标题，在下面的大框中填写更新的具体描述，准备就绪后点击 Commit to main。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/10.png">
+                    <p>这里的标题和描述可以随便写，但是建议写得有意义一点，方便未来查阅</p>
+                </div>
+                <p>Commit to main 完成后，点击右上角的 Publish repository 来推送你的更新到Github。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/11.png">
+                    <p>如果你忘了登录，点击后会弹出登录框，输入你的github账号密码即可</p>
+                </div>
+                <p>如果推送更新失败，那就请检查你的网络和设置，确认你能够正常访问github。可以使用watt toolkit或302之类的反代功能加速，或者用UsbEAm修改hosts文件（不一定有用），网上也有很多无法流畅访问github的解决办法，可以自行搜索参考。</p>
+                <div class="intro">首次推送时右上角的按钮是 Publish repository，在以后的每次更新，commit完以后右上角按钮会变成 push origin，点击即可推送更新到github仓库。</div>
+
+                <h2 id="克隆仓库到服务器">克隆仓库到服务器</h2>
+                <div class="intro">
+                    <p>在服务器上拉取最新代码需要服务器安装git，一般主流云服务器商比如阿里云、腾讯云等都会在服务器系统内默认安装git，所以不需要你自己去安装。如果你的服务器系统没有安装git，那么请手动为你的服务器安装git。具体操作方法基于不同系统有些许区别，可以自行搜索参考。</p>
+                </div>
+                <p>打开1Panel的网站管理页，点击网站目录下的文件夹图标来打开你的网站的根目录。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/12.png">
+                </div>
+                <p>删除目录里的所有内容（建议先备份再删除）。</p>
+                <p>点击顶部的 ↑ 按钮返回上一级文件目录，再点击顶部的终端按钮，进入终端界面。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/13.png">
+                    <p>这一长条的最右边</p>
+                </div>
+                <p>在终端中输入以下命令，注意将https链接替换为<a rel="noopener noreferrer" class="wordbutton" onclick="location.href='#httpslink'">上文提到的仓库链接</a>。</p>
+<div>
+    <pre>
+        <code class="Bash">#1Panel的终端界面不支持复制粘贴，请手动输入或在右下角批量输入中粘贴输入
+git clone https://github.com/user/repository.git index</code>
+</pre>
+</div>
+                <p>回车执行命令，等待克隆完成。</p>
+
+                <h2 id="在服务器上拉取最新代码">在服务器上拉取最新代码</h2>
+                <div class="intro">
+                    <p>首次部署完成后，未来每次在Github Desktop中推送完更新以后，都可以直接参考本节的步骤操作。</p>
+                    <p>更新网站完整的步骤请参考<a rel="noopener noreferrer" class="wordbutton" onclick="location.href='#推送更新标准流程'">推送更新标准流程</a>，每次更新都请务必按照标准流程操作。</p>
+                </div>
+                <p>打开1Panel的网站管理页，点击网站目录下的文件夹图标来打开你的网站的根目录。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/12.png">
+                    <p>没错，又是这里</p>
+                </div>
+                <p>点击顶部的终端按钮，进入终端界面。</p>
+                <div class="imgbox">
+                    <img src="../../../image/p/2025/202501/13.png">
+                    <p>这次不需要返回上一级了</p>
+                </div>
+                <p>在终端中输入以下命令，回车执行。</p>
+<div>
+    <pre>
+        <code class="Bash">#1Panel的终端界面不支持复制粘贴，请手动输入或在右下角批量输入中粘贴输入
+git pull origin main</code>
+</pre>
+</div>
+                <p>等待命令执行完成，你的网站就更新到最新版本了。</p>
+
+                <h2 id="推送更新标准流程">推送更新标准流程</h2>
+                <p>在Github Desktop中打开编辑器编辑你的网站文件，然后 Commit to main。<br>（编辑你的网站不是只能在编辑器中编辑，只需要保证你的修改都在本地仓库文件夹内进行即可）</p>
+                <p>Commit to main 完成后，点击右上角的 push origin 来推送你的更新到Github。</p>
+                <p>打开1Panel的网站管理页，点击网站目录下的文件夹图标来打开你的网站的根目录。</p>
+                <p>点击顶部的终端按钮，进入终端界面。</p>
+                <p>在终端中输入以下命令，回车执行。</p>
+<div>
+    <pre>
+        <code class="Bash">#1Panel的终端界面不支持复制粘贴，请手动输入或在右下角批量输入中粘贴输入
+git pull origin main</code>
+</pre>
+</div>
+                <p>等待命令执行完成，你的网站就更新到最新版本了。</p>
+
+                
+            </div>
+            <!--正文结束-->
+            <!--文章结束-->
+        </div>
+    <footer>
+        <p3>©2021 <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="font-weight: 800; text-decoration: none;">ShuninYu</a>. All rights reserved.</br>Theme Closet designed by <a href="https://www.shuninyu.fun" rel="noopener noreferrer" target="_blank" style="font-weight: 800; text-decoration: none;">ShuninYu</a>.</p3>
+    </footer>
+</html>
