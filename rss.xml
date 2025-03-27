@@ -14,14 +14,14 @@
         <copyright>©2022 ShuininYu. All rights reserved.</copyright>
         <!-- 文章列表，在此行下面输入rss按tab添加更新 -->
         <item>
-            <title></title>
+            <title>通过Github管理1Panel纯静态网站更新</title>
             <link isPermaLink="true">https://blog.shuninyu.fun/p/2025/202501</link>
             <guid>https://blog.shuninyu.fun/p/2025/202501</guid>
             <pubDate>Fri, 22 Mar 2025 16:25:00 +0800</pubDate>
             <description>把github pages迁移到阿里云服务器后，继续使用github desktop管理网站的版本更新。</description>
         </item>
         <item>
-            <title></title>
+            <title>赛博药方——疑难杂症解决方案合集</title>
             <link isPermaLink="true">https://blog.shuninyu.fun/p/top/problems</link>
             <guid>https://blog.shuninyu.fun/p/top/problems</guid>
             <pubDate>Fri, 19 Mar 2025 19:42:26 +0800</pubDate>
