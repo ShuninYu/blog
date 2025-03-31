@@ -292,13 +292,13 @@ h1 {
 h2 {
     font-size: 1.8em;
     font-weight: normal;
-    margin-top: 1em;
-    padding-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h3 {
     font-size: x-large;
-    padding-bottom: 0.5em;
+    margin-top: 1em;
 }
 
 p {

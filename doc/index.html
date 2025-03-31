@@ -76,21 +76,17 @@
                 <div class="borderline"></div>
                     <div>
                         <pre>
-                            <code>&lt;div>
-    &lt;pre>
-        &lt;code>代码内容第一行
+                            <code>&lt;div>&lt;pre>&lt;code>代码内容第一行
 代码内容中间行
-代码最后一行&lt;/code>
-&lt;/pre>
-&lt;/div></code>
+代码最后一行&lt;/code>&lt;/pre>&lt;/div></code>
 </pre>
                     </div>
                     <p class="intro">
-                        新建一行粘贴后，让左侧紧贴边缘！因为VSCode会自动添加缩进导致代码底部错误的多出很多空间。<br>
-                        如果预览的时候高亮错误，可以在code元素中添加class来标注代码类型，例如：class="Bash" 来标注Bash代码，插件会自动识别并高亮显示。<br>
+                        贴着最左边粘贴并且撤销掉vscode粘贴产生的自动缩进！否则会导致代码块上下错误的多出很多空间。<br>
+                        代码不能对齐html格式的缩进，否则会显示出错。<br>
+                        如果预览的时候高亮错误，可以尝试在code元素中添加class来标注代码类型，例如：class="Bash" 来标注Bash代码，插件会自动识别并高亮显示。<br>
                         使用 &amp;lt; 来代替代码以及正文中的 &lt;<br>
                         使用 &amp;amp; 来代替转义字符中的 &<br>
-                        代码不能对齐html格式的缩进，否则会显示出错。<br>
                         首行必须在code标签后面，末行必须在/code标签前面，代码每一行都必须按代码实际内容缩进。<br>
                         最后一个pre标签必须取消缩进，否则代码块和其他文字的间距会显示错误。（详细看示例）<br>
                         blog使用jquery，代码段用上面的格式插入，插件会自动识别代码类型。

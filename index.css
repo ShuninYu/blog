@@ -84,6 +84,10 @@
     }
 }
 
+.homeicon {
+    min-width: 10vw;
+}
+
 .homecover {
     line-height: 1em;
     width: 500px;

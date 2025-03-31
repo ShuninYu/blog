@@ -14,6 +14,13 @@
         <copyright>©2022 ShuininYu. All rights reserved.</copyright>
         <!-- 文章列表，在此行下面输入rss按tab添加更新 -->
         <item>
+            <title>Minecraft JAVA版纯净服frp开服</title>
+            <link isPermaLink="true">https://blog.shuninyu.fun/p/2025/202502</link>
+            <guid>https://blog.shuninyu.fun/p/2025/202502</guid>
+            <pubDate>Mon, 31 Mar 2025 11:37:55 +0800</pubDate>
+            <description>用你的电脑或者空闲的老电脑开一个纯净版JAVA服务器，使用官方服务端核心以及frp内网穿透，简单部署。</description>
+        </item>
+        <item>
             <title>通过Github管理1Panel纯静态网站更新</title>
             <link isPermaLink="true">https://blog.shuninyu.fun/p/2025/202501</link>
             <guid>https://blog.shuninyu.fun/p/2025/202501</guid>
