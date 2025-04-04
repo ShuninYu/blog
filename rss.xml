@@ -3,7 +3,7 @@
     <channel>
         <atom:link href="https://blog.shuninyu.fun/rss.xml" rel="self" type="application/rss+xml"/>
         <image>
-            <url>https://blog.shuninyu.fun/favicon.ico</url>
+            <url>https://blog.shuninyu.fun/image/icon.png</url>
             <title>孤灯从流-Blog</title>
             <link>https://blog.shuninyu.fun</link>
         </image>
