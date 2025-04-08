@@ -45,9 +45,9 @@
                             <button class="sideFoldRightButton" onclick="location.href='#硬件类'">硬件类</button>
                         </div>
                         <div class="sideFoldcontent">
-                            <button class="sideRightButton" onclick="location.href='#硬件类01'">台式机前面板耳机孔有杂音</button>
-                            <button class="sideRightButton" onclick="location.href='#硬件类02'">GPW一代板载灯效异常</button>
-                            <button class="sideRightButton" onclick="location.href='#硬件类03'">双屏或多屏情况下，浏览器多开同时播放视频直播卡顿</button>
+                            <button class="sideRightButton" onclick="location.href='#硬件类01'" title="台式机前面板耳机孔有杂音">台式机前面板耳机孔有杂音</button>
+                            <button class="sideRightButton" onclick="location.href='#硬件类02'" title="GPW一代板载灯效异常">GPW一代板载灯效异常</button>
+                            <button class="sideRightButton" onclick="location.href='#硬件类03'" title="双屏或多屏情况下，浏览器多开同时播放视频直播卡顿">双屏或多屏情况下，浏览器多开同时播放视频直播卡顿</button>
                         </div>
                     </div>
 
@@ -57,7 +57,8 @@
                             <button class="sideFoldRightButton" onclick="location.href='#软件类'">软件类</button>
                         </div>
                         <div class="sideFoldcontent">
-                            <button class="sideRightButton" onclick="location.href='#软件类01'">Github Desktop找不到VSCode</button>
+                            <button class="sideRightButton" onclick="location.href='#软件类01'" title="Github Desktop找不到VSCode">Github Desktop找不到VSCode</button>
+                            <button class="sideRightButton" onclick="location.href='#软件类02'" title="PotPlayer截图色彩偏灰">PotPlayer截图色彩偏灰</button>
                         </div>
                     </div>
 
@@ -67,7 +68,7 @@
                             <button class="sideFoldRightButton" onclick="location.href='#特别情况Q&A'">特别情况Q&A</button>
                         </div>
                         <div class="sideFoldcontent">
-                            <button class="sideRightButton" onclick="location.href='#Q&A01'">intel平台更换到AMD平台是否需要重装系统？</button>
+                            <button class="sideRightButton" onclick="location.href='#Q&A01'" title="intel平台更换到AMD平台是否需要重装系统？">intel平台更换到AMD平台是否需要重装系统？</button>
                         </div>
                     </div>
 
@@ -186,6 +187,35 @@
                     </button>
                     <div class="foldcontent">
                         <p>具体解决办法查看<a rel="noopener noreferrer" target="_blank" class="wordbutton" href="https://blog.shuninyu.fun/p/2024/20240110a/">这篇文章</a></p>
+                    </div>
+                </div>
+
+                <div class="folder folding" id="软件类02">
+                    <button class="foldButton">
+                        <div class="triangle"><p2>▶</p2><h1>PotPlayer截图色彩偏灰</h1></div>
+                    </button>
+                    <div class="foldcontent">
+                        <div class="intro">
+                            <p>
+                                先描述一下这个问题的具体现象：<br>
+                                PotPlayer自带截图功能，可以截取视屏源尺寸的画面，但是截图出来的图片色彩偏灰，不像直接用截图软件截取的画面那样鲜艳，和PotPlayer播放的色彩也不同。
+                            </p>
+                            <div class="imgbox">
+                                <img src="../../../image/p/top/problems/11.png">
+                                <p>可以看到右边截图的色彩明显偏灰</p>
+                            </div>
+                        </div>
+                        <p>解决办法：调整着色集</p>
+                        <p>右键菜单 -> 视频 -> 像素着色 -> 调整尺寸前的着色集 -> Procamp</p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/12.png">
+                        </div>
+                        <p>其实着色集选择任意一个都可以截出彩图，但之所以选择“Procamp”，是因为它对画面结构没有影响。<br><ps>该解释来自百度贴吧@原卫罗</ps></p>
+                        <div class="imgbox">
+                            <img src="../../../image/p/top/problems/13.png">
+                            <p>左旧右新，可以看到右边颜色正常</p>
+                        </div>
+                        
                     </div>
                 </div>
 
